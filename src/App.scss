@@ -1,7 +1,12 @@
 .App {
 	text-align: center;
-
-	button {
-		font-weight: bold;
+	height: 100dvh;
+	.pdfDownloadLink{
+		outline: none;
 	}
+	.pdfDownloadLink:hover{
+		border: 1pc solid ;
+	}
+
+
 }
