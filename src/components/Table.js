@@ -31,20 +31,16 @@ const styles = StyleSheet.create({
 	},
 });
 
-const Table = (context) => {
-	const { config: { items }} = context;
-
-	return <View style={ styles.table }>
-		<View style={ [styles.row, styles.bold] }>
-			<Text style={ styles.row1 }>Num</Text>
-			<Text style={ styles.row1 }>Items</Text>
-			<Text style={ styles.row1 }>HSN/SAC</Text>
-			<Text style={ styles.row1 }>Quantity</Text>
-			<Text style={ styles.row1 }>rate</Text>
-			<Text style={ styles.row1 }>amount</Text>
-		</View>
-		<Item { ...{ items, styles } }/>
-	</View>;
-};
+const Table = (context) => <View style={ styles.table }>
+	<View style={ [styles.row, styles.bold] }>
+		<Text style={ styles.row1 }>Num</Text>
+		<Text style={ styles.row1 }>Items</Text>
+		<Text style={ styles.row1 }>HSN/SAC</Text>
+		<Text style={ styles.row1 }>Quantity</Text>
+		<Text style={ styles.row1 }>rate</Text>
+		<Text style={ styles.row1 }>amount</Text>
+	</View>
+	<Item { ...{ ...context, styles } }/>
+</View>;
 
 export default Table;

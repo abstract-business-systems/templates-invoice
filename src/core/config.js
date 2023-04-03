@@ -1,20 +1,46 @@
 const config = {
-	items: [
-		{
-			name: 'Consulting Charge',
-			quantity: { count: 1, unit: 12 },
-			hsnOrSAC: '-',
-			rate: 13,
-			amount: 2001,
+	obj: {
+		invoiceNo: '2344 03-01-2002 01',
+		invoiceDate: '13-06-2001',
+		vendor: {
+			name: 'vendorName',
+			address: 'vendorAddress',
+			govtDoc: { id: 'panNo or gstNo', type: 'gstIn or pan' },
 		},
-		{
-			name: 'other charge',
-			quantity: { count: 1, unit: 12 },
-			hsnOrSAC: '-',
-			rate: 3,
-			amount: 2002,
+		bankDetails: {
+			accountHolderName: 'accountHolderName',
+			accountNo: 'accountNo',
+			ifsc: 'ifsc',
+			accountType: 'accountType',
+			branchName: 'branchName',
 		},
-	],
+		client: {
+			address: ['Abs', '34', 'ch'],
+			govtDoc: { id: 'panNo or gstNo', type: 'gstIn or pan' },
+		},
+		items: [
+			{
+				name: 'Consulting Charge',
+				quantity: { count: 1, unit: 12 },
+				hsnOrSAC: '-',
+				rate: 13,
+				amount: 2001,
+			},
+			{
+				name: 'other charge',
+				quantity: { count: 1, unit: 12 },
+				hsnOrSAC: '-',
+				rate: 3,
+				amount: 2002,
+			},
+		],
+		subtotal: 'subtotal',
+		taxes: 'taxes',
+		grandTotal: 'grandTotal',
+		advancePaid: 'advancePaid',
+		balanceAmount: 'balanceAmount',
+		amountInWords: 'amountInWords',
+	},
 };
 
 export default config;
