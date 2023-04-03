@@ -1,19 +1,19 @@
 import { React } from 'react';
 import './App.scss';
+import { PDFViewer, StyleSheet } from '@react-pdf/renderer';
 import Invoice from './components/Invoice';
-import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
 
-const App = () => <div className="App">
-	<PDFViewer width="90%" height="90%">
-		<Invoice/>
+const styles = StyleSheet.create({
+	frame: {
+		width: '100vw',
+		height: '100vh',
+	},
+});
+
+const App = (context) => <div className="App">
+	<PDFViewer style={ styles.frame }>
+		<Invoice { ...context }/>
 	</PDFViewer>
-	<PDFDownloadLink
-		document={ <Invoice/> }
-		fileName="Invoice.pdf"
-		className="pdfDownloadLink"
-	>
-		{({ loading }) => (loading ? 'Loading document...' : 'Download now!')}
-	</PDFDownloadLink>
 </div>;
 
 export default App;
