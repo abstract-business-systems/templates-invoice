@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
 		width: '5%',
 		textAlign: 'center',
 	},
-
 });
 
 const Table = (context) => <View style={ styles.table }>
@@ -41,7 +40,7 @@ const Table = (context) => <View style={ styles.table }>
 		<Text style={ styles.row1 }>Num</Text>
 		<Text style={ styles.row2 }>Items</Text>
 		<Text style={ styles.row2 }>HSN/SAC</Text>
-		<Text style={ styles.row3 }>Qty</Text>
+		<Text style={ styles.row1 }>Qty</Text>
 		<Text style={ styles.row1 }>Rate</Text>
 		<Text style={ styles.row1 }>Amount</Text>
 	</View>

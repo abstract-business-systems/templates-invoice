@@ -9,8 +9,8 @@ const Item = (context) => {
 			<Text style={ styles.row1 }>{i + 1}</Text>
 			<Text style={ styles.row2 }>{item.name}</Text>
 			<Text style={ styles.row2 }>{item.hsnOrSAC}</Text>
-			<Text style={ styles.row3 }>
-				{item.quantity.count}  {item.quantity.unit}
+			<Text style={ styles.row1 }>
+				{item.quantity.count} {item.quantity.unit}
 			</Text>
 			<Text style={ styles.row1 }>{item.rate}</Text>
 			<Text style={ styles.row1 }>{item.amount}</Text>
