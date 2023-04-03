@@ -1,10 +1,10 @@
 const config = {
 	obj: {
-		invoiceNo: '2344 03-01-2002 01',
+		invoiceNo: 'rk23033101',
 		invoiceDate: '13-06-2001',
 		vendor: {
 			name: 'vendorName',
-			address: 'vendorAddress',
+			address: ['Abs', '34', 'ch'],
 			govtDoc: { id: 'panNo or gstNo', type: 'gstIn or pan' },
 		},
 		bankDetails: {

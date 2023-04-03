@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	subtext: {
-		margin: 0,
 		fontSize: 14,
 		padding: 20,
 		flex: 1,

@@ -2,6 +2,7 @@ import React from 'react';
 import { Page, Document, StyleSheet } from '@react-pdf/renderer';
 import Table from './Table';
 import InvoiceSection from './InvoiceSection';
+import Vendor from './Vendor';
 
 const styles = StyleSheet.create({
 	page: {
@@ -15,6 +16,7 @@ const styles = StyleSheet.create({
 const Invoice = (context) => <Document>
 	<Page size="A4" style={ styles.page }>
 		<InvoiceSection { ...context }/>
+		<Vendor { ...context }/>
 		<Table { ...context }/>
 	</Page>
 </Document>;
