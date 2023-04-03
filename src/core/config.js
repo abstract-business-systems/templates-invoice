@@ -4,8 +4,8 @@ const config = {
 		invoiceDate: '13-06-2001',
 		vendor: {
 			name: 'vendorName',
-			address: ['Abs', '34', 'ch'],
-			govtDoc: { id: 'panNo or gstNo', type: 'gstIn or pan' },
+			address: ['Absasdsadswdsassdasdsadsdsdsadsadsdsdsadsa', '34', 'ch'],
+			govtDoc: { id: 'FWe130230', type: 'PAN' },
 		},
 		bankDetails: {
 			accountHolderName: 'accountHolderName',
@@ -15,20 +15,20 @@ const config = {
 			branchName: 'branchName',
 		},
 		client: {
-			address: ['Abs', '34', 'ch'],
+			address: ['Absasdsadswdsassdasdsadsdsdsadsadsdsdsadsa', '34', 'ch'],
 			govtDoc: { id: 'panNo or gstNo', type: 'gstIn or pan' },
 		},
 		items: [
 			{
 				name: 'Consulting Charge',
-				quantity: { count: 1, unit: 12 },
+				quantity: { count: 1, unit: 'hrs' },
 				hsnOrSAC: '-',
 				rate: 13,
 				amount: 2001,
 			},
 			{
 				name: 'other charge',
-				quantity: { count: 1234, unit: 12 },
+				quantity: { count: 134, unit: 'hrs' },
 				hsnOrSAC: '-',
 				rate: 3,
 				amount: 2002,
