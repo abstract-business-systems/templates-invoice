@@ -7,15 +7,16 @@ const styles = StyleSheet.create({
 	page: {
 		flexDirection: 'column',
 		margin: 10,
+		marginTop: 90,
 	},
+
 });
 
-const Invoice = (context) =>
-	<Document>
-		<Page size="A4" style={ styles.page }>
-			<InvoiceSection/>
-			<Table { ...context }/>
-		</Page>
-	</Document>;
+const Invoice = (context) => <Document>
+	<Page size="A4" style={ styles.page }>
+		<InvoiceSection { ...context }/>
+		<Table { ...context }/>
+	</Page>
+</Document>;
 
 export default Invoice;

@@ -5,8 +5,8 @@ import Invoice from './components/Invoice';
 
 const styles = StyleSheet.create({
 	frame: {
-		width: '100vw',
-		height: '100vh',
+		width: '90vw',
+		height: '90vh',
 	},
 });
 

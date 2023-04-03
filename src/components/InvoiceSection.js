@@ -4,10 +4,9 @@ import { View, Text, StyleSheet } from '@react-pdf/renderer';
 const styles = StyleSheet.create({
 	view: {
 		flexDirection: 'row',
-		margin: 20,
 	},
 	subtext: {
-		margin: 10,
+		margin: 0,
 		fontSize: 14,
 		padding: 20,
 		flex: 1,

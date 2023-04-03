@@ -4,7 +4,7 @@ import Item from './Item';
 
 const styles = StyleSheet.create({
 	table: {
-		width: '100%',
+		width: '90%',
 		margin: 20,
 		border: '1px solid black',
 	},
@@ -25,20 +25,25 @@ const styles = StyleSheet.create({
 		width: '15%',
 		textAlign: 'center',
 	},
-
-	text: {
+	row2: {
+		width: '25%',
 		textAlign: 'center',
 	},
+	row3: {
+		width: '5%',
+		textAlign: 'center',
+	},
+
 });
 
 const Table = (context) => <View style={ styles.table }>
 	<View style={ [styles.row, styles.bold] }>
 		<Text style={ styles.row1 }>Num</Text>
-		<Text style={ styles.row1 }>Items</Text>
-		<Text style={ styles.row1 }>HSN/SAC</Text>
-		<Text style={ styles.row1 }>Quantity</Text>
-		<Text style={ styles.row1 }>rate</Text>
-		<Text style={ styles.row1 }>amount</Text>
+		<Text style={ styles.row2 }>Items</Text>
+		<Text style={ styles.row2 }>HSN/SAC</Text>
+		<Text style={ styles.row3 }>Qty</Text>
+		<Text style={ styles.row1 }>Rate</Text>
+		<Text style={ styles.row1 }>Amount</Text>
 	</View>
 	<Item { ...{ ...context, styles } }/>
 </View>;
