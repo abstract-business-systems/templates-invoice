@@ -9,7 +9,7 @@ const GovtDoc = (context) => {
 			<Text style={ styles.bold }>{vendor.govtDoc.type}: </Text>
 			<Text>{vendor.govtDoc.id}</Text>
 		</Text>
-		<Text style={ styles.sutext }>
+		<Text style={ styles.subtext }>
 			<Text style={ styles.bold }>{client.govtDoc.type}: </Text>
 			<Text>{client.govtDoc.id}</Text>
 		</Text>

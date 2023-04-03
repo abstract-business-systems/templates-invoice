@@ -16,7 +16,7 @@ const config = {
 		},
 		client: {
 			address: ['Absasdsadswdsassdasdsadsdsdsadsadsdsdsadsa', '34', 'ch'],
-			govtDoc: { id: 'panNo or gstNo', type: 'gstIn or pan' },
+			govtDoc: { id: 'panNo or gstNo', type: 'GSTIN' },
 		},
 		items: [
 			{
