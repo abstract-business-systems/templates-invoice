@@ -1,8 +1,6 @@
-/* eslint-disable max-lines-per-function */
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
 import React from 'react';
 import Address from './Address';
-import GovtDoc from './GovtDoc';
 
 const styles = StyleSheet.create({
 	view: {
@@ -34,23 +32,18 @@ const styles = StyleSheet.create({
 	},
 });
 
-const Vendor = (context) => {
-	const { config: { obj: { vendor, client }}} = context;
-
-	return <View>
-		<View style={ styles.subView }>
-			<View style={ styles.view }>
-				<Text style={ styles.subtext }>
-					<Text style={ styles.bold }>Vendor Address:</Text>
-				</Text>
-				<Text style={ styles.subtext }>
-					<Text style={ styles.bold }>Client Billing Address: </Text>
-				</Text>
-			</View>
-			<Address { ...{ ...context, styles } }/>
-			<GovtDoc { ...{ ...context, styles } }/>
+const Vendor = (context) => <View>
+	<View style={ styles.subView }>
+		<View style={ styles.view }>
+			<Text style={ styles.subtext }>
+				<Text style={ styles.bold }>Vendor Address:</Text>
+			</Text>
+			<Text style={ styles.subtext }>
+				<Text style={ styles.bold }>Client Billing Address: </Text>
+			</Text>
 		</View>
-	</View>;
-};
+		<Address { ...{ ...context, styles } }/>
+	</View>
+</View>;
 
 export default Vendor;

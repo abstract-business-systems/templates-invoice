@@ -16,10 +16,9 @@ const Address = (context) => {
 		</View>
 		<View style={ styles.subView }>
 			{client.address.map((address, i) =>
-				<Text key={ i } wrap={ true } style={ styles.sutext }>
+				<Text key={ i } 	style={ styles.sutext }>
 					<Text>{address}</Text>
 				</Text>)}
-
 		</View>
 	</View>;
 };
