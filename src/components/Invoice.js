@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
 	},
 	light: {
 		fontFamily: 'Roboto-Light',
+		textAlign: 'justify',
 	},
 	subtext: {
 		marginLeft: 80,
