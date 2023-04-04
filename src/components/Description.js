@@ -1,10 +1,9 @@
 import React from 'react';
 import { Text, View } from '@react-pdf/renderer';
 const subtext = {
-	width: '80%',
+	width: '90%',
 	fontSize: 10,
 	fontFamily: 'Roboto-Light',
-	letterSpacing: '1px',
 };
 const Description = () =>
 	<View style={ {
