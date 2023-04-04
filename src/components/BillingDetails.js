@@ -7,12 +7,12 @@ const BillingDetails = (context) => {
 		styles,
 		config: { obj },
 	} = context;
-	const borderTop = { borderTop: '1px solid #EEE' };
+	const borderTop = { borderTop: '1.5px solid #EEE' };
 
 	return (
 		<View
 			style={ [styles.row,
-				{ borderLeft: '0.2px solid black' }] }
+				{ borderLeft: '1.5px solid #EEE' }] }
 		>
 			<View style={ styles.row1 }>
 				<Text style={ styles.bold }>Sub Total</Text>
@@ -25,14 +25,6 @@ const BillingDetails = (context) => {
 			<View style={ [styles.row1, borderTop] }>
 				<Text style={ styles.bold }>Grand Total</Text>
 				<Text style={ styles.light }>{obj.taxes}</Text>
-			</View>
-			<View style={ [styles.row1, borderTop] }>
-				<Text style={ styles.bold }>Advance Paid </Text>
-				<Text style={ styles.light }>{obj.advancePaid}</Text>
-			</View>
-			<View style={ [styles.row1, borderTop] }>
-				<Text style={ styles.bold }>Balance Amount </Text>
-				<Text style={ styles.light }>{obj.balanceAmount}</Text>
 			</View>
 			<View style={ [styles.row1, borderTop] }>
 				<Text style={ styles.bold }>Amount in words: </Text>

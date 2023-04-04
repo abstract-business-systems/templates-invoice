@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
 		width: '80%',
 		margin: 10,
 		marginLeft: 40,
-		border: '0.6px solid black',
+		border: '1.5px solid #EEE',
 		flexDirection: 'row',
 	},
 	row: {

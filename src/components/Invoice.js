@@ -19,14 +19,14 @@ const styles = StyleSheet.create({
 	page: {
 		flexDirection: 'column',
 		margin: 20,
-		marginTop: 80,
+		marginTop: 50,
 		padding: 20,
 	},
 	view: {
 		flexDirection: 'row',
 	},
 	text: {
-		marginLeft: 40,
+		marginLeft: 30,
 		fontSize: 10,
 		width: 150,
 		flexWrap: 'wrap',

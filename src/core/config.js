@@ -15,30 +15,26 @@ const config = {
 			'Branch Name': 'branchName',
 		},
 		client: {
-			address: ['Absasdsadswdsassdasdsadsdsdsadsadsdsdsadsa', '34', 'ch'],
+			address: ['Abstract Business Systems Pvt. Ltd,',
+				'#40, Subramaniyapuram New St,',
+				'Devakottai, Tamilnadu - 630302.'],
 			govtDoc: { id: 'panNo or gstNo', type: 'GSTIN' },
 		},
 		items: [
 			{
 				name: 'Consulting Charges',
 				quantity: { count: 1, unit: 'hrs' },
-				hsnOrSAC: '-',
 				rate: 13,
 				amount: 2001,
 			},
 			{
 				name: 'Other charges',
-				quantity: { count: 134, unit: 'hrs' },
-				hsnOrSAC: '-',
-				rate: 3,
 				amount: 2002,
 			},
 		],
 		subtotal: 'subtotal',
 		taxes: 'taxes',
 		grandTotal: 'grandTotal',
-		advancePaid: 'advancePaid',
-		balanceAmount: 'balanceAmount',
 		amountInWords: 'amountInWords',
 	},
 };

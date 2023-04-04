@@ -2,7 +2,7 @@ import { View, Text } from '@react-pdf/renderer';
 import React from 'react';
 const subtext = {
 	fontSize: 10,
-	padding: 10,
+	padding: 1,
 	marginLeft: 30,
 	flex: 1,
 };
