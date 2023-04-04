@@ -1,20 +1,14 @@
-import { View, Text } from '@react-pdf/renderer';
 import React from 'react';
-
-const subtext = {
-	fontSize: 10,
-	marginLeft: 30,
-	flex: 1,
-};
+import { View, Text } from '@react-pdf/renderer';
 
 const Vendor = (context) => {
-	const { styles } = context;
+	const { data: styles } = context;
 
 	return <View style={ styles.view }>
-		<Text style={ subtext }>
+		<Text style={ styles.subtext }>
 			<Text style={ styles.bold }>Vendor Address:</Text>
 		</Text>
-		<Text style={ subtext }>
+		<Text style={ styles.subtext }>
 			<Text style={ styles.bold }>Client Billing Address: </Text>
 		</Text>
 	</View>;

@@ -30,7 +30,6 @@ const styles = StyleSheet.create({
 		fontSize: 10,
 		width: 150,
 		flexWrap: 'wrap',
-
 	},
 	bold: {
 		fontFamily: 'Roboto-Bold',
@@ -41,27 +40,29 @@ const styles = StyleSheet.create({
 		textAlign: 'justify',
 	},
 	subtext: {
-		marginLeft: 99,
-		paddingLeft: 30,
 		fontSize: 10,
-		width: 180,
-		flexWrap: 'wrap',
+		marginLeft: 30,
+		flex: 1,
 	},
 	subView: {
 		flexDirection: 'column',
 	},
 });
 
-const Invoice = (context) => <Document>
-	<Page size="A4" style={ styles.page }>
-		<InvoiceSection { ...{ ...context, styles } }/>
-		<Vendor { ...{ ...context, styles } }/>
-		<Address { ...{ ...context, styles } }/>
-		<GovtDoc { ...{ ...context, styles } }/>
-		<Table { ...context }/>
-		<BankDetails { ...context }/>
-		<Description { ...{ ...context, styles } }/>
-	</Page>
-</Document>;
+const Invoice = (context) => {
+	const extendedContext = { ...{ ...context, data: styles }};
+
+	return <Document>
+		<Page size="A4" style={ styles.page }>
+			<InvoiceSection { ...extendedContext }/>
+			<Vendor { ...extendedContext }/>
+			<Address { ...extendedContext }/>
+			<GovtDoc { ...extendedContext }/>
+			<Table { ...context }/>
+			<BankDetails { ...context }/>
+			<Description { ...extendedContext }/>
+		</Page>
+	</Document>;
+};
 
 export default Invoice;
