@@ -15,11 +15,14 @@ Font.register({ family: 'Roboto-Light',
 const styles = StyleSheet.create({
 	page: {
 		flexDirection: 'column',
-		margin: 10,
-		marginTop: 90,
+		margin: 20,
+		marginTop: 100,
+	},
+	view: {
+		flexDirection: 'row',
 	},
 	text: {
-		padding: 1,
+		padding: 10,
 		marginTop: 5,
 		marginLeft: 20,
 		fontSize: 10,
@@ -29,19 +32,20 @@ const styles = StyleSheet.create({
 		fontFamily: 'Roboto-Bold',
 		textAlign: 'justify',
 	},
-	view: {
-		flexDirection: 'row',
+	light: {
+		fontFamily: 'Roboto-Light',
 	},
 	subtext: {
 		marginLeft: 100,
 		fontSize: 14,
 		width: 200,
 	},
+
 });
 
 const Invoice = (context) => <Document>
 	<Page size="A4" style={ styles.page }>
-		<InvoiceSection { ...context }/>
+		<InvoiceSection { ...{ ...context, styles } }/>
 		<Vendor { ...context }/>
 		<GovtDoc { ...{ ...context, styles } }/>
 		<Table { ...context }/>
