@@ -6,12 +6,12 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	subtext: {
-		fontSize: 14,
+		fontSize: 10,
 		padding: 20,
 		flex: 1,
 	},
 	bold: {
-		fontFamily: 'Helvetica-Bold',
+		fontFamily: 'Roboto-Bold',
 		textAlign: 'justify',
 	},
 });

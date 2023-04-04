@@ -20,7 +20,7 @@ const config = {
 		},
 		items: [
 			{
-				name: 'Consulting Charge',
+				name: 'Consulting Charges',
 				quantity: { count: 1, unit: 'hrs' },
 				hsnOrSAC: '-',
 				rate: 13,
