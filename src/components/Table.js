@@ -5,7 +5,7 @@ import Item from './Item';
 const styles = StyleSheet.create({
 	table: {
 		width: '80%',
-		margin: 20,
+		margin: 10,
 		marginLeft: 40,
 		border: '0.6px solid black',
 	},

@@ -8,6 +8,7 @@ import RobotoBold from '../fonts/Roboto-Bold.ttf';
 import RobotoLight from '../fonts/Roboto-Light.ttf';
 import Address from './Address';
 import BankDetails from './BankDetails';
+import Description from './Description';
 
 Font.register({ family: 'Roboto-Bold',
 	src: RobotoBold });
@@ -59,6 +60,7 @@ const Invoice = (context) => <Document>
 		<GovtDoc { ...{ ...context, styles } }/>
 		<Table { ...context }/>
 		<BankDetails { ...context }/>
+		<Description { ...{ ...context, styles } }/>
 	</Page>
 </Document>;
 
