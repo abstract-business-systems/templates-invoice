@@ -13,7 +13,7 @@ const config = {
 				'Eiusmod amet ipsum cupidatat ea. Nisi officia aliqua sit ut sint ea occaecat mollit incididunt laboris ipsum. Incididunt quis cupidatat nisi culpa pariatur tempor. Culpa sit commodo et sunt elit qui. Sint quis proident fugiat labore aliqua sint exercitation ad id. Esse officia laborum adipisicing pariatur esse et commodo nostrud quis nulla. Ut qui reprehenderit aute irure ad laboris ullamco.',
 				'ch',
 				'34skdskjndoisjdiosdklnslmdoiksjdoianjskldms;lkdiahjsoidjsakj',
-				'Eiusmod amet ipsum cupidatat ea. Nisi officia aliqua sit ut sint ea occaecat mollit incididunt laboris ipsum. Incididunt quis cupidatat nisi culpa pariatur tempor. Culpa sit commodo et sunt elit qui. Sint quis proident fugiat labore aliqua sint exercitation ad id. Esse officia laborum adipisicing pariatur esse et commodo nostrud quis nulla. Ut qui reprehenderit aute irure ad laboris ullamco.',
+				' id. Esse officia laborum adipisicing pariatur esse et commodo nostrud quis nulla. Ut qui reprehenderit aute irure ad laboris ullamco.',
 				'ch'],
 			govtDoc: { id: 'FWe130230', type: 'PAN' },
 		},
@@ -29,7 +29,8 @@ const config = {
 				'#40, Subramaniyapuram New St,',
 				'Devakottai, Tamilnadu - 630302.',
 				'drojfodmmfdkfpdfndfklfdl;',
-				'ddfjdkjfpdjfpodjksfpjdfkjd'],
+				'ddfjdkjfpdjfpodjksfpjdfkjd',
+				'ioiuhjokoispjdoijhsaoidjapiosjdisajidjapisj'],
 			govtDoc: { id: '33AAXCA0332P1ZC', type: 'GSTIN' },
 		},
 		items: [

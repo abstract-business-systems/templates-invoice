@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
 		flexDirection: 'column',
 		margin: 20,
 		marginTop: 50,
-		padding: 20,
+		paddingBottom: 100,
+		paddingHorizontal: 30,
 	},
 	view: {
 		flexDirection: 'row',
