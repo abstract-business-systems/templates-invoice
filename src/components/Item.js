@@ -3,17 +3,18 @@ import React from 'react';
 
 const Item = (context) => {
 	const { config: { obj: { items }}, styles } = context;
+	const { hsnOrSAC = '-' } = items;
 
-	return items.map((item, i) =>
+	return items.map(({ name, rate, amount, quantity = {}}, i) =>
 		<View key={ i } style={ [styles.row, styles.light] } wrap={ false }>
 			<Text style={ { width: '10%' } }>{i + 1}</Text>
-			<Text style={ styles.row2 }>{item.name}</Text>
-			<Text style={ styles.row2 }>{item.hsnOrSAC}</Text>
+			<Text style={ styles.row2 }>{name}</Text>
+			<Text style={ styles.row2 }>{hsnOrSAC}</Text>
 			<Text style={ styles.row1 }>
-				{item.quantity.count} {item.quantity.unit}
+				{quantity.count} {quantity.unit}
 			</Text>
-			<Text style={ styles.row1 }>{item.rate}</Text>
-			<Text style={ styles.row1 }>{item.amount}</Text>
+			<Text style={ styles.row1 }>{rate}</Text>
+			<Text style={ styles.row1 }>{amount}</Text>
 		</View>);
 };
 
