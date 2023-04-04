@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 		textAlign: 'justify',
 	},
 	subtext: {
-		marginLeft: 100,
+		marginLeft: 99,
 		paddingLeft: 30,
 		fontSize: 10,
 		width: 180,
