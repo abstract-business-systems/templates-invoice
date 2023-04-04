@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
 	table: {
 		width: '80%',
 		margin: 10,
-		marginLeft: 40,
+		marginLeft: 30,
 		border: '1.5px solid #EEE',
 		flexDirection: 'row',
 	},

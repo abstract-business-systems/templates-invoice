@@ -27,8 +27,11 @@ const BillingDetails = (context) => {
 				<Text style={ styles.light }>{obj.taxes}</Text>
 			</View>
 			<View style={ [styles.row1, borderTop] }>
-				<Text style={ styles.bold }>Amount in words: </Text>
-				<Text style={ styles.light }>{obj.amountInWords}</Text>
+				<Text style={ styles.bold }>Amount in words:
+					<Text style={ styles.light }>
+						{obj.amountInWords}</Text>
+				</Text>
+
 			</View>
 		</View>
 	);
