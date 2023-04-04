@@ -2,6 +2,7 @@ import React from 'react';
 import { map } from '@laufire/utils/collection';
 import { values } from '@laufire/utils/lib';
 import { View, Text, StyleSheet } from '@react-pdf/renderer';
+import BillingDetails from './BillingDetails';
 
 const styles = StyleSheet.create({
 	table: {
@@ -17,6 +18,8 @@ const styles = StyleSheet.create({
 		paddingBottom: 30,
 		fontSize: 10,
 		width: '50%',
+		paddingRight: 10,
+
 	},
 	bold: {
 		fontFamily: 'Roboto-Bold',
@@ -47,7 +50,7 @@ const BankDetails = (context) => {
 						{value}</Text>
 				</View>))}
 		</View>
-
+		<BillingDetails { ...{ ...context, styles } }/>
 	</View>;
 };
 

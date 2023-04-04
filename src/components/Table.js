@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
 		width: '80%',
 		margin: 20,
 		marginLeft: 40,
-		border: '1px solid black',
+		border: '0.6px solid black',
 	},
 	row: {
 		display: 'flex',
