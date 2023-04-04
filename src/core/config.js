@@ -8,11 +8,11 @@ const config = {
 			govtDoc: { id: 'FWe130230', type: 'PAN' },
 		},
 		bankDetails: {
-			accountHolderName: 'accountHolderName',
-			accountNo: 'accountNo',
-			ifsc: 'ifsc',
-			accountType: 'accountType',
-			branchName: 'branchName',
+			'Name': 'accountHolderName',
+			'IFSC': 'ifsc',
+			'Account No': 'accountNo',
+			'Acc Type': 'accountType',
+			'Branch Name': 'branchName',
 		},
 		client: {
 			address: ['Absasdsadswdsassdasdsadsdsdsadsadsdsdsadsa', '34', 'ch'],
