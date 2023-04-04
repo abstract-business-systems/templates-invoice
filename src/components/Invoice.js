@@ -17,7 +17,8 @@ const styles = StyleSheet.create({
 	page: {
 		flexDirection: 'column',
 		margin: 20,
-		marginTop: 100,
+		marginTop: 80,
+		padding: 20,
 	},
 	view: {
 		flexDirection: 'row',
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
 	text: {
 		marginLeft: 40,
 		fontSize: 10,
-		width: 200,
+		width: 150,
 		flexWrap: 'wrap',
 
 	},
@@ -38,16 +39,15 @@ const styles = StyleSheet.create({
 		textAlign: 'justify',
 	},
 	subtext: {
-		marginLeft: 80,
-		paddingLeft: 20,
+		marginLeft: 100,
+		paddingLeft: 30,
 		fontSize: 10,
-		width: 200,
+		width: 180,
 		flexWrap: 'wrap',
 	},
 	subView: {
 		flexDirection: 'column',
 	},
-
 });
 
 const Invoice = (context) => <Document>

@@ -5,8 +5,8 @@ const Item = (context) => {
 	const { config: { obj: { items }}, styles } = context;
 
 	return items.map((item, i) =>
-		<View key={ i } style={ styles.row } wrap={ false }>
-			<Text style={ styles.row1 }>{i + 1}</Text>
+		<View key={ i } style={ [styles.row, styles.light] } wrap={ false }>
+			<Text style={ { width: '10%' } }>{i + 1}</Text>
 			<Text style={ styles.row2 }>{item.name}</Text>
 			<Text style={ styles.row2 }>{item.hsnOrSAC}</Text>
 			<Text style={ styles.row1 }>

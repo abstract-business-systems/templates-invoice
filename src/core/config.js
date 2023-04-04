@@ -27,7 +27,7 @@ const config = {
 				amount: 2001,
 			},
 			{
-				name: 'other charge',
+				name: 'Other charges',
 				quantity: { count: 134, unit: 'hrs' },
 				hsnOrSAC: '-',
 				rate: 3,
