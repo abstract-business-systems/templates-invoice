@@ -2,7 +2,8 @@ import React from 'react';
 import { View, Text } from '@react-pdf/renderer';
 const subtext = {
 	fontSize: 10,
-	padding: 50,
+	padding: 10,
+	marginLeft: 30,
 	flex: 1,
 };
 const InvoiceSection = (context) => {

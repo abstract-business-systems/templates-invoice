@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 	},
 	subtext: {
 		marginLeft: 100,
-		fontSize: 14,
+		fontSize: 10,
 		width: 200,
 	},
 
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
 const Invoice = (context) => <Document>
 	<Page size="A4" style={ styles.page }>
 		<InvoiceSection { ...{ ...context, styles } }/>
-		<Vendor { ...context }/>
+		<Vendor { ...{ ...context, styles } }/>
 		<GovtDoc { ...{ ...context, styles } }/>
 		<Table { ...context }/>
 	</Page>
