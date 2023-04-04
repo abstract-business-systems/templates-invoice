@@ -1,9 +1,16 @@
 import React from 'react';
-import { Page, Document, StyleSheet } from '@react-pdf/renderer';
+import { Page, Document, StyleSheet, Font } from '@react-pdf/renderer';
 import Table from './Table';
 import InvoiceSection from './InvoiceSection';
 import Vendor from './Vendor';
 import GovtDoc from './GovtDoc';
+import RobotoBold from '../fonts/Roboto-Bold.ttf';
+import RobotoLight from '../fonts/Roboto-Light.ttf';
+
+Font.register({ family: 'Roboto-Bold',
+	src: RobotoBold });
+Font.register({ family: 'Roboto-Light',
+	src: RobotoLight });
 
 const styles = StyleSheet.create({
 	page: {
@@ -15,11 +22,11 @@ const styles = StyleSheet.create({
 		padding: 1,
 		marginTop: 5,
 		marginLeft: 20,
-		fontSize: 14,
+		fontSize: 10,
 		width: 200,
 	},
 	bold: {
-		fontFamily: 'Helvetica-Bold',
+		fontFamily: 'Roboto-Bold',
 		textAlign: 'justify',
 	},
 	view: {
