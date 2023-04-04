@@ -6,6 +6,7 @@ import Vendor from './Vendor';
 import GovtDoc from './GovtDoc';
 import RobotoBold from '../fonts/Roboto-Bold.ttf';
 import RobotoLight from '../fonts/Roboto-Light.ttf';
+import Address from './Address';
 
 Font.register({ family: 'Roboto-Bold',
 	src: RobotoBold });
@@ -22,11 +23,11 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	text: {
-		padding: 10,
-		marginTop: 5,
-		marginLeft: 20,
+		marginLeft: 40,
 		fontSize: 10,
 		width: 200,
+		flexWrap: 'wrap',
+
 	},
 	bold: {
 		fontFamily: 'Roboto-Bold',
@@ -36,9 +37,14 @@ const styles = StyleSheet.create({
 		fontFamily: 'Roboto-Light',
 	},
 	subtext: {
-		marginLeft: 100,
+		marginLeft: 80,
+		paddingLeft: 20,
 		fontSize: 10,
 		width: 200,
+		flexWrap: 'wrap',
+	},
+	subView: {
+		flexDirection: 'column',
 	},
 
 });
@@ -47,6 +53,7 @@ const Invoice = (context) => <Document>
 	<Page size="A4" style={ styles.page }>
 		<InvoiceSection { ...{ ...context, styles } }/>
 		<Vendor { ...{ ...context, styles } }/>
+		<Address { ...{ ...context, styles } }/>
 		<GovtDoc { ...{ ...context, styles } }/>
 		<Table { ...context }/>
 	</Page>

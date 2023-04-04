@@ -7,16 +7,16 @@ const Address = (context) => {
 	return <View style={ styles.view }>
 		<View style={ styles.subView }>
 			<Text style={ styles.text }>
-				<Text>{vendor.name}</Text>
+				<Text style={ styles.light }>{vendor.name}</Text>
 			</Text>
 			{vendor.address.map((address, i) =>
-				<Text key={ i } style={ styles.text }>
-					<Text>{address}</Text>
+				<Text key={ i } wrap={ true } style={ styles.text }>
+					<Text style={ styles.light }>{address}</Text>
 				</Text>)}
 		</View>
 		<View style={ styles.subView }>
 			{client.address.map((address, i) =>
-				<Text key={ i } 	style={ styles.sutext }>
+				<Text key={ i } style={ styles.subtext }>
 					<Text>{address}</Text>
 				</Text>)}
 		</View>
