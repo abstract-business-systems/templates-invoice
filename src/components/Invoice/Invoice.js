@@ -10,8 +10,10 @@ import AddressSection from './AddressSection';
 import ChargesTable from './ChargesTable';
 import BillingTable from './BillingTable';
 
-Font.register({ family: 'Roboto-Bold',
-	src: RobotoBold });
+Font.register({
+	family: 'Roboto-Bold',
+	src: RobotoBold,
+});
 Font.register({ family: 'Roboto-Light',
 	src: RobotoLight });
 
