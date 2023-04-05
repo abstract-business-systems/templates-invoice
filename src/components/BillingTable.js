@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 	},
 
 });
-const BankDetails = (context) => {
+const BillingTable = (context) => {
 	const { config: { obj: { bankDetails }}} = context;
 
 	return <View style={ styles.table }>
@@ -54,4 +54,4 @@ const BankDetails = (context) => {
 	</View>;
 };
 
-export default BankDetails;
+export default BillingTable;

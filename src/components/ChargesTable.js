@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 	},
 });
 
-const Table = (context) => <View style={ styles.table }>
+const ChargesTable = (context) => <View style={ styles.table }>
 	<View style={ [styles.row, styles.bold] }>
 		<Text style={ { width: '10%' } }>Num</Text>
 		<Text style={ styles.row2 }>Items</Text>
@@ -46,4 +46,4 @@ const Table = (context) => <View style={ styles.table }>
 	<Item { ...{ ...context, styles } }/>
 </View>;
 
-export default Table;
+export default ChargesTable;

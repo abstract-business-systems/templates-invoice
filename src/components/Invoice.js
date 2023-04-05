@@ -1,14 +1,14 @@
 import React from 'react';
 import { Page, Document, StyleSheet, Font } from '@react-pdf/renderer';
-import Table from './Table';
 import InvoiceSection from './InvoiceSection';
 import GovtDoc from './GovtDoc';
 import RobotoBold from '../fonts/RobotoMono-Bold.ttf';
 import RobotoLight from '../fonts/RobotoMono-Light.ttf';
 import Address from './Address';
-import BankDetails from './BankDetails';
 import Description from './Description';
 import AddressSection from './AddressSection';
+import ChargesTable from './ChargesTable';
+import BillingTable from './BillingTable';
 
 Font.register({ family: 'Roboto-Bold',
 	src: RobotoBold });
@@ -59,8 +59,8 @@ const Invoice = (context) => {
 			<AddressSection { ...extendedContext }/>
 			<Address { ...extendedContext }/>
 			<GovtDoc { ...extendedContext }/>
-			<Table { ...context }/>
-			<BankDetails { ...context }/>
+			<ChargesTable { ...context }/>
+			<BillingTable { ...context }/>
 			<Description { ...extendedContext }/>
 		</Page>
 	</Document>;
