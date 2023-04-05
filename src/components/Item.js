@@ -5,10 +5,10 @@ const Item = (context) => {
 	const { config: { obj: { items }}, styles } = context;
 	const { hsnOrSAC = '-' } = items;
 
-	return items.map(({ name, rate, amount, quantity = {}}, i) =>
+	return items.map(({ item, rate, amount, quantity = {}}, i) =>
 		<View key={ i } style={ [styles.row, styles.light] } wrap={ false }>
 			<Text style={ { width: '10%' } }>{i + 1}</Text>
-			<Text style={ styles.row2 }>{name}</Text>
+			<Text style={ styles.row2 }>{item}</Text>
 			<Text style={ styles.row2 }>{hsnOrSAC}</Text>
 			<Text style={ styles.row1 }>
 				{quantity.count} {quantity.unit}

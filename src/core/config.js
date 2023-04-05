@@ -1,54 +1,45 @@
 /* eslint-disable max-len */
 const config = {
 	obj: {
-		invoiceNo: 'rk23033101',
-		invoiceDate: '13-06-2001',
-		vendor: {
-			name: 'vendorName',
-			address: ['Abstract Business Systems Pvt. Ltd,',
-				'34skdskjndoisjdiosdklnslmdoiksjdoianjskldms;lkdiahjsoidjsakj',
-				'Eiusmod amet ipsum cupidatat ea. Nisi officia aliqua sit ut sint ea occaecat mollit incididunt laboris ipsum. Incididunt quis cupidatat nisi culpa pariatur tempor. Culpa sit commodo et sunt elit qui. Sint quis proident fugiat labore aliqua sint exercitation ad id. Esse officia laborum adipisicing pariatur esse et commodo nostrud quis nulla. Ut qui reprehenderit aute irure ad laboris ullamco.',
-				'ch',
-				'34skdskjndoisjdiosdklnslmdoiksjdoianjskldms;lkdiahjsoidjsakj',
-				'Eiusmod amet ipsum cupidatat ea. Nisi officia aliqua sit ut sint ea occaecat mollit incididunt laboris ipsum. Incididunt quis cupidatat nisi culpa pariatur tempor. Culpa sit commodo et sunt elit qui. Sint quis proident fugiat labore aliqua sint exercitation ad id. Esse officia laborum adipisicing pariatur esse et commodo nostrud quis nulla. Ut qui reprehenderit aute irure ad laboris ullamco.',
-				'ch',
-				'34skdskjndoisjdiosdklnslmdoiksjdoianjskldms;lkdiahjsoidjsakj',
-				' id. Esse officia laborum adipisicing pariatur esse et commodo nostrud quis nulla. Ut qui reprehenderit aute irure ad laboris ullamco.',
-				'ch'],
-			govtDoc: { id: 'FWe130230', type: 'PAN' },
-		},
 		bankDetails: {
-			'Name': 'accountHolderName',
-			'IFSC': 'ifsc',
-			'Account No': 'accountNo',
-			'Acc Type': 'accountType',
-			'Branch Name': 'branchName',
+			'Acc Type': 'Savings',
+			'Account No': 20261000031380,
+			'Branch Name': 'Mean St',
+			'IFSC': 'IDBA0000138',
+			'Name': 'Fluf Dug',
 		},
 		client: {
-			address: ['Abstract Business Systems Pvt. Ltd,',
+			address: [
+				'Abstract Business Systems Pvt. Ltd,',
 				'#40, Subramaniyapuram New St,',
 				'Devakottai, Tamilnadu - 630302.',
-				'drojfodmmfdkfpdfndfklfdl;',
-				'ddfjdkjfpdjfpodjksfpjdfkjd',
-				'ioiuhjokoispjdoijhsaoidjapiosjdisajidjapisj'],
+			],
 			govtDoc: { id: '33AAXCA0332P1ZC', type: 'GSTIN' },
 		},
+		grandTotal: '2552.85',
+		invoiceDate: '18-09-2002',
+		invoiceNo: 'fdg02091801',
 		items: [
 			{
-				name: 'Consulting Charges',
-				quantity: { count: 1, unit: 'hrs' },
-				rate: 13,
-				amount: 2001,
-			},
-			{
-				name: 'Other charges',
-				amount: 2002,
+				amount: 2836.5,
+				item: 'Consulting charges',
+				quantity: { count: 94.55, unit: 'hrs' },
+				rate: 30,
 			},
 		],
-		subtotal: 'subtotal',
-		taxes: 'taxes',
-		grandTotal: 'grandTotal',
-		amountInWords: 'ten thousand two hundred thirty-four only',
+		subTotal: '2836.50',
+		taxes: '283.65',
+		vendor: {
+			address: [
+				'17-261, Mean Street,',
+				'Jobber, Heading Town,',
+				'Broch - 340 321.',
+			],
+			govtDoc: { id: 'R7909FFJPA', type: 'PAN' },
+			name: 'Fluf Dug',
+		},
+		amountInWords:
+			'Two Thousand Five Hundred Fifty Two Rupees And Eighty Five Paise Only',
 	},
 };
 
