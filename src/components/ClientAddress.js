@@ -12,7 +12,7 @@ const subtext = {
 const ClientAddress = (context) => {
 	const { config: { obj: { client }}, data: styles } = context;
 
-	return <View style={ styles.subView }>
+	return <View style={ [styles.subView, { height: '100px' }] }>
 		{client.address.map((address, i) =>
 			<Text key={ i } style={ subtext }>
 				<Text style={ styles.light }>{address}</Text>
