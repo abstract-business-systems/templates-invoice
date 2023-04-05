@@ -1,8 +1,7 @@
 import React from 'react';
-import { map } from '@laufire/utils/collection';
-import { values } from '@laufire/utils/lib';
-import { View, Text, StyleSheet } from '@react-pdf/renderer';
+import { View, StyleSheet } from '@react-pdf/renderer';
 import BillingDetails from './BillingDetails';
+import BankDetails from './BankDetails';
 
 const styles = StyleSheet.create({
 	table: {
@@ -37,21 +36,10 @@ const styles = StyleSheet.create({
 	},
 
 });
-const BillingTable = (context) => {
-	const { config: { obj: { bankDetails }}} = context;
-
-	return <View style={ styles.table }>
-		<View style={ styles.row }>
-			<Text style={ styles.bold }>Bank Details: </Text>
-			{values(map(bankDetails, (value, key) =>
-				<View key={ key } style={ styles.row1 }>
-					<Text style={ styles.bold }>{key}:</Text>
-					<Text style={ styles.light }>
-						{value}</Text>
-				</View>))}
-		</View>
+const BillingTable = (context) =>
+	<View style={ styles.table }>
+		<BankDetails { ...{ ...context, data: styles } }/>
 		<BillingDetails { ...{ ...context, styles } }/>
 	</View>;
-};
 
 export default BillingTable;
