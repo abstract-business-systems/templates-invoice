@@ -1,18 +1,14 @@
 import React from 'react';
-import { View, Text } from '@react-pdf/renderer';
+import { View } from '@react-pdf/renderer';
+import VendorDoc from './VendorDoc';
+import ClientDoc from './ClientDoc';
 
 const GovtDoc = (context) => {
-	const { data: styles, config: { obj: { vendor, client }}} = context;
+	const { data: styles } = context;
 
 	return <View style={ styles.view }>
-		<Text style={ [styles.subtext, { paddingTop: 5 }] }>
-			<Text style={ styles.bold }>{vendor.govtDoc.type}: </Text>
-			<Text style={ styles.light }>{vendor.govtDoc.id}</Text>
-		</Text>
-		<Text style={ [styles.subtext, { paddingTop: 5 }] }>
-			<Text style={ styles.bold }>{client.govtDoc.type}: </Text>
-			<Text style={ styles.light }>{client.govtDoc.id}</Text>
-		</Text>
+		<VendorDoc { ...context }/>
+		<ClientDoc { ...context }/>
 	</View>;
 };
 
