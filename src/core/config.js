@@ -3,10 +3,10 @@ const config = {
 	obj: {
 		bankDetails: {
 			'Acc Type': 'Savings',
-			'Account No': 20261000031380,
-			'Branch Name': 'Mean St',
-			'IFSC': 'IDBA0000138',
-			'Name': 'Fluf Dug',
+			'Account No': 55955579016957,
+			'Branch Name': 'Jobber',
+			'IFSC': 'ICIC0000009',
+			'Name': 'Ratty',
 		},
 		client: {
 			address: [
@@ -16,30 +16,31 @@ const config = {
 			],
 			govtDoc: { id: '33AAXCA0332P1ZC', type: 'GSTIN' },
 		},
-		grandTotal: '2552.85',
-		invoiceDate: '18-09-2002',
-		invoiceNo: 'fdg02091801',
+		grandTotal: '4432.50',
+		invoiceDate: '28-08-2022',
+		invoiceNo: 'rty22082801',
 		items: [
 			{
-				amount: 2836.5,
+				amount: 2400,
 				item: 'Consulting charges',
-				quantity: { count: 94.55, unit: 'hrs' },
-				rate: 30,
+				quantity: { count: 120, unit: 'hrs' },
+				rate: 20,
 			},
+			{ amount: 2525, item: 'Other charges' },
 		],
-		subTotal: '2836.50',
-		taxes: '283.65',
+		subTotal: '4925.00',
+		taxes: '492.50',
 		vendor: {
 			address: [
-				'17-261, Mean Street,',
+				'303-A, 2nd Broch Street,',
 				'Jobber, Heading Town,',
-				'Broch - 340 321.',
+				'Mean - 340 322.',
 			],
-			govtDoc: { id: 'R7909FFJPA', type: 'PAN' },
-			name: 'Fluf Dug',
+			govtDoc: { id: 'RPK494EO5D', type: 'PAN' },
+			name: 'Ratty',
 		},
 		amountInWords:
-			'Two Thousand Five Hundred Fifty Two Rupees And Eighty Five Paise Only',
+			'Four Thousand Four Hundred Thirty Two Rupees And Fifty Paise Only',
 	},
 };
 

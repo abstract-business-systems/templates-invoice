@@ -1,7 +1,7 @@
 import { React } from 'react';
 import './App.scss';
 import { PDFViewer, StyleSheet } from '@react-pdf/renderer';
-import Invoice from './components/Invoice';
+import Invoice from './components/Invoice/Invoice';
 
 const styles = StyleSheet.create({
 	frame: {
