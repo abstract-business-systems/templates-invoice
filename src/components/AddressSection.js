@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from '@react-pdf/renderer';
 
-const Vendor = (context) => {
+const AddressSection = (context) => {
 	const { data: styles } = context;
 
 	return <View style={ styles.view }>
@@ -14,4 +14,4 @@ const Vendor = (context) => {
 	</View>;
 };
 
-export default Vendor;
+export default AddressSection;
