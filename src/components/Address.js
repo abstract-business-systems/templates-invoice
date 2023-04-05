@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from '@react-pdf/renderer';
+import VendorAddress from './VendorAddress';
 
 const subtext = {
 	marginLeft: 99,
@@ -10,18 +11,10 @@ const subtext = {
 };
 
 const Address = (context) => {
-	const { config: { obj: { vendor, client }}, data: styles } = context;
+	const { config: { obj: { client }}, data: styles } = context;
 
 	return <View style={ styles.view }>
-		<View style={ styles.subView }>
-			<Text style={ styles.text }>
-				<Text style={ styles.light }>{vendor.name}</Text>
-			</Text>
-			{vendor.address.map((address, i) =>
-				<Text key={ i } wrap={ true } style={ styles.text }>
-					<Text style={ styles.light }>{address}</Text>
-				</Text>)}
-		</View>
+		<VendorAddress { ...context }/>
 		<View style={ styles.subView }>
 			{client.address.map((address, i) =>
 				<Text key={ i } style={ subtext }>
