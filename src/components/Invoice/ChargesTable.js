@@ -4,19 +4,18 @@ import Item from './Item';
 
 const styles = StyleSheet.create({
 	table: {
-		width: '80%',
+		width: '85%',
 		margin: 10,
-		marginLeft: 30,
+		marginLeft: 20,
 		border: '1.5px solid #EEE',
+		borderTop: 'none',
 	},
 	row: {
 		display: 'flex',
 		flexDirection: 'row',
 		borderTop: '1.5px solid #EEE',
-		paddingTop: 8,
-		padding: 10,
-		paddingBottom: 8,
 		fontSize: 10,
+
 	},
 	bold: {
 		fontFamily: 'Roboto-Bold',
@@ -26,21 +25,31 @@ const styles = StyleSheet.create({
 	},
 	row1: {
 		width: '15%',
-		textAlign: 'center',
+		borderLeft: '1.5px solid #EEE',
+		padding: '3 0 15 5',
 	},
-	row2: {
-		width: '25%',
-		textAlign: 'center',
+	num: {
+		width: '10%',
+		borderLeft: 'none',
+	},
+	hsn: {
+		width: '13%',
+	},
+	item: {
+		width: '50%',
+	},
+	rightAlign: {
+		textAlign: 'right',
 	},
 });
 
 const ChargesTable = (context) => <View style={ styles.table }>
 	<View style={ [styles.row, styles.bold] }>
-		<Text style={ { width: '10%' } }>Num</Text>
-		<Text style={ styles.row2 }>Items</Text>
-		<Text style={ styles.row2 }>HSN/SAC</Text>
+		<Text style={ [styles.row1, styles.num] }>Num</Text>
+		<Text style={ [styles.row1, styles.item] }>Items</Text>
+		<Text style={ [styles.row1, styles.hsn] }>HSN / SAC</Text>
 		<Text style={ styles.row1 }>Qty</Text>
-		<Text style={ styles.row1 }>Rate</Text>
+		<Text style={ [styles.row1, styles.hsn] }>Rate</Text>
 		<Text style={ styles.row1 }>Amount</Text>
 	</View>
 	<Item { ...{ ...context, styles } }/>

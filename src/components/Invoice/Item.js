@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 import { View, Text } from '@react-pdf/renderer';
 import React from 'react';
 
@@ -7,14 +8,17 @@ const Item = (context) => {
 
 	return items.map(({ item, rate, amount, quantity = {}}, i) =>
 		<View key={ i } style={ [styles.row, styles.light] } wrap={ false }>
-			<Text style={ { width: '10%' } }>{i + 1}</Text>
-			<Text style={ styles.row2 }>{item}</Text>
-			<Text style={ styles.row2 }>{hsnOrSAC}</Text>
-			<Text style={ styles.row1 }>
+			<Text style={ [styles.row1, styles.num] }>{i + 1}</Text>
+			<Text style={ [styles.row1, styles.item] }>{item}</Text>
+			<Text
+				style={ [styles.row1, styles.hsn, { textAlign: 'center' }] }
+			>{hsnOrSAC}</Text>
+			<Text style={ [styles.row1, styles.rightAlign] }>
 				{quantity.count} {quantity.unit}
 			</Text>
-			<Text style={ styles.row1 }>{rate}</Text>
-			<Text style={ styles.row1 }>{amount}</Text>
+			<Text style={ [styles.row1, styles.hsn, styles.rightAlign] }>
+				{rate}</Text>
+			<Text style={ [styles.row1, styles.rightAlign] }>{amount}</Text>
 		</View>);
 };
 
