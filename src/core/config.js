@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 const config = {
 	obj: {
 		bankDetails: {
@@ -95,6 +94,11 @@ const config = {
 		},
 		amountInWords:
 			'Four Thousand Four Hundred Thirty Two Rupees And Fifty Paise Only',
+	},
+	billingDetails: {
+		'Sub Total': 'subTotal',
+		'Taxes': 'taxes',
+		'Grand Total': 'grandTotal',
 	},
 };
 
