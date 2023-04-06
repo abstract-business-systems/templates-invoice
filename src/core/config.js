@@ -1,9 +1,5 @@
 const config = {
 	obj: {
-		taxess: [
-			{ item: 'Taxtest', amount: 120 },
-			{ item: 'Taxtest', amount: 31 },
-		],
 		bankDetails: {
 			'Acc Type': 'Savings',
 			'Account No': 55955579016957,
