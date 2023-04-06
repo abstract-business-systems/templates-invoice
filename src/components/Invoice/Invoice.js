@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
 	page: {
 		flexDirection: 'column',
 		margin: 20,
-		marginTop: 100,
-		paddingBottom: 100,
+		paddingTop: 90,
+		paddingBottom: 90,
 		paddingHorizontal: 30,
 	},
 	view: {
@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
 	text: {
 		marginLeft: 25,
 		fontSize: 10,
-		width: 150,
-		flexWrap: 'wrap',
+		width: '220px',
+		wordWrap: 'wrap',
 	},
 	bold: {
 		fontFamily: 'Roboto-Bold',
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
 	subView: {
 		flexDirection: 'column',
 	},
+	position: { position: 'relative', right: 33 },
 });
 
 const Invoice = (context) => {
