@@ -15,7 +15,7 @@ const config = {
 			],
 			govtDoc: { id: '33AAXCA0332P1ZC', type: 'GSTIN' },
 		},
-		grandTotal: '4432.50',
+		grandTotal: 4432.50,
 		invoiceDate: '28-08-2022',
 		invoiceNo: 'rty22082801',
 		items: [
@@ -78,11 +78,17 @@ const config = {
 				item: 'Consulting charges',
 				quantity: { count: 120, unit: 'hrs' },
 				rate: 20,
+				type: 'product',
+			},
+			{
+				item: 'tax',
+				amount: 2400,
+				type: 'tax',
 			},
 			{ amount: 2525, item: 'Other charges' },
 		],
-		subTotal: '4925.00',
-		taxes: '492.50',
+		subTotal: 4925.00,
+		taxes: 492.50,
 		vendor: {
 			address: [
 				'303-A, 2nd Broch Street,',
@@ -101,7 +107,7 @@ const config = {
 		'Grand Total': 'grandTotal',
 	},
 	hsnOrSAC: '-',
-
+	digits: 2,
 };
 
 export default config;
