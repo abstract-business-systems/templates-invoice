@@ -8,7 +8,7 @@ const AddressSection = (context) => {
 		<Text style={ styles.subtext }>
 			<Text style={ styles.bold }>Vendor Address:</Text>
 		</Text>
-		<Text style={ styles.subtext }>
+		<Text style={ [styles.subtext, styles.position] }>
 			<Text style={ styles.bold }>Client Billing Address: </Text>
 		</Text>
 	</View>;
