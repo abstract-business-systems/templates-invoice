@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 	page: {
 		flexDirection: 'column',
 		margin: 20,
-		marginTop: 50,
+		marginTop: 100,
 		paddingBottom: 100,
 		paddingHorizontal: 30,
 	},
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 	},
 	text: {
-		marginLeft: 30,
+		marginLeft: 25,
 		fontSize: 10,
 		width: 150,
 		flexWrap: 'wrap',
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
 	},
 	subtext: {
 		fontSize: 10,
-		marginLeft: 30,
+		marginLeft: 25,
 		flex: 1,
 	},
 	subView: {

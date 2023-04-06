@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 	row1: {
 		width: '15%',
 		borderLeft: '1.5px solid #EEE',
-		padding: '3 3 15 5',
+		padding: '3 3 10 5',
 	},
 	num: {
 		width: '10%',
