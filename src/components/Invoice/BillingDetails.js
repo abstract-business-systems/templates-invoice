@@ -1,37 +1,24 @@
-/* eslint-disable max-lines-per-function */
+import { map, values } from '@laufire/utils/collection';
 import { View, Text } from '@react-pdf/renderer';
 import React from 'react';
 
 const BillingDetails = (context) => {
-	const {
-		styles,
-		config: { obj },
-	} = context;
-	const borderTop = { borderTop: '1.5px solid #EEE' };
+	const { styles, config: { obj, billingDetails }} = context;
 
 	return (
-		<View
-			style={ [styles.row,
-				{ borderLeft: '1.5px solid #EEE' }] }
-		>
-			<View style={ styles.row1 }>
-				<Text style={ styles.bold }>Sub Total</Text>
-				<Text style={ styles.light }>{obj.subtotal}</Text>
-			</View>
-			<View style={ [styles.row1, borderTop] }>
-				<Text style={ styles.bold }>Taxes</Text>
-				<Text style={ styles.light }>{obj.grandTotal}</Text>
-			</View>
-			<View style={ [styles.row1, borderTop] }>
-				<Text style={ styles.bold }>Grand Total</Text>
-				<Text style={ styles.light }>{obj.taxes}</Text>
-			</View>
-			<View style={ [styles.row1, borderTop] }>
+		<View style={ [styles.row, { borderLeft: '1.5px solid #EEE' }] }>
+			{values(map(billingDetails, (value, key) =>
+				<View
+					key={ key }
+					style={ [styles.row1, styles.borderTop] }
+				>
+					<Text style={ styles.bold }>{key}</Text>
+					<Text style={ styles.light }>{obj[value]}</Text>
+				</View>))}
+			<View style={ [styles.row1, styles.borderTop] }>
 				<Text style={ styles.bold }>Amount in words:
-					<Text style={ styles.light }>
-						{obj.amountInWords}</Text>
+					<Text style={ styles.light }>{ obj.amountInWords}</Text>
 				</Text>
-
 			</View>
 		</View>
 	);

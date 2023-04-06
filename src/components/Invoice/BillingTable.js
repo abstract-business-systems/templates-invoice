@@ -5,11 +5,12 @@ import BankDetails from './BankDetails';
 
 const styles = StyleSheet.create({
 	table: {
-		width: '80%',
+		width: '85%',
 		margin: 10,
-		marginLeft: 30,
+		marginLeft: 20,
 		border: '1.5px solid #EEE',
 		flexDirection: 'row',
+		borderTop: 'none',
 	},
 	row: {
 		display: 'flex',
@@ -17,8 +18,6 @@ const styles = StyleSheet.create({
 		paddingBottom: 30,
 		fontSize: 10,
 		width: '50%',
-		paddingRight: 10,
-
 	},
 	bold: {
 		fontFamily: 'Roboto-Bold',
@@ -32,14 +31,14 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		width: '100%',
 		justifyContent: 'space-between',
-		marginLeft: 5,
 	},
-
+	borderTop: { borderTop: '1.5px solid #EEE' },
 });
 const BillingTable = (context) =>
 	<View style={ styles.table }>
 		<BankDetails { ...{ ...context, data: styles } }/>
 		<BillingDetails { ...{ ...context, styles } }/>
-	</View>;
+	</View>
+;
 
 export default BillingTable;
