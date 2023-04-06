@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
 	row1: {
 		width: '15%',
 		borderLeft: '1.5px solid #EEE',
-		padding: '3 0 15 5',
+		padding: '3 3 15 5',
 	},
 	num: {
 		width: '10%',
@@ -40,6 +40,10 @@ const styles = StyleSheet.create({
 	},
 	rightAlign: {
 		textAlign: 'right',
+	},
+	quantity: {
+		display: 'flex',
+		flexDirection: 'column',
 	},
 });
 
