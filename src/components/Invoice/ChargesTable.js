@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { StyleSheet, View } from '@react-pdf/renderer';
 import Products from './Products';
 import Taxes from './Taxes';
+import ChargesHeader from './ChargesHeader';
 
 const styles = StyleSheet.create({
 	table: {
@@ -48,17 +49,14 @@ const styles = StyleSheet.create({
 	},
 });
 
-const ChargesTable = (context) => <View style={ styles.table }>
-	<View style={ [styles.row, styles.bold] }>
-		<Text style={ [styles.row1, styles.num] }>Num</Text>
-		<Text style={ [styles.row1, styles.item] }>Items</Text>
-		<Text style={ [styles.row1, styles.hsn] }>HSN / SAC</Text>
-		<Text style={ styles.row1 }>Qty</Text>
-		<Text style={ [styles.row1, styles.hsn] }>Rate</Text>
-		<Text style={ styles.row1 }>Amount</Text>
-	</View>
-	<Products { ...{ ...context, styles } }/>
-	<Taxes { ...{ ...context, styles } }/>
-</View>;
+const ChargesTable = (context) => {
+	const extendedContext = { ...{ ...context, styles }};
+
+	return <View style={ styles.table }>
+		<ChargesHeader { ...extendedContext }/>
+		<Products { ...extendedContext }/>
+		<Taxes { ...extendedContext }/>
+	</View>;
+};
 
 export default ChargesTable;
