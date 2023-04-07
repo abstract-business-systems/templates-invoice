@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
-import Items from './Items';
+import Products from './Products';
 
 const styles = StyleSheet.create({
 	table: {
@@ -56,7 +56,7 @@ const ChargesTable = (context) => <View style={ styles.table }>
 		<Text style={ [styles.row1, styles.hsn] }>Rate</Text>
 		<Text style={ styles.row1 }>Amount</Text>
 	</View>
-	<Items { ...{ ...context, styles } }/>
+	<Products { ...{ ...context, styles } }/>
 </View>;
 
 export default ChargesTable;
