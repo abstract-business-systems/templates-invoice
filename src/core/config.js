@@ -55,7 +55,6 @@ const config = {
 			{ amount: 2525, item: 'Other charges', type: 'product' },
 		],
 		subTotal: 4925.00,
-		taxes: 492.50,
 		vendor: {
 			address: [
 				'303-A, 2nd Broch Street,',
@@ -67,11 +66,6 @@ const config = {
 		},
 		amountInWords:
 			'Four Thousand Four Hundred Thirty Two Rupees And Fifty Paise Only',
-	},
-	billingDetails: {
-		'Sub Total': 'subTotal',
-		'Taxes': 'taxes',
-		'Grand Total': 'grandTotal',
 	},
 	hsnOrSAC: '-',
 	digits: 2,
