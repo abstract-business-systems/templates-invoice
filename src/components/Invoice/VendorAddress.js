@@ -4,7 +4,7 @@ import React from 'react';
 const VendorAddress = (context) => {
 	const { config: { obj: { vendor }}, data: styles } = context;
 
-	return <View style={ [styles.subView, { height: '100px' }] }>
+	return <View style={ [styles.subView, { left: 25 }] }>
 		<Text style={ styles.text }>
 			<Text style={ styles.light }>{vendor.name}</Text>
 		</Text>

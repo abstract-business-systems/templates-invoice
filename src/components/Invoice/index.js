@@ -27,11 +27,12 @@ const styles = StyleSheet.create({
 	},
 	view: {
 		flexDirection: 'row',
+		justifyContent: 'space-around',
+
 	},
 	text: {
-		marginLeft: 25,
 		fontSize: 10,
-		width: '220px',
+		width: '50%',
 		wordWrap: 'wrap',
 	},
 	bold: {

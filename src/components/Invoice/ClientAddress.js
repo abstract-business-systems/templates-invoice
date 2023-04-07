@@ -1,21 +1,12 @@
-import { View, Text } from '@react-pdf/renderer';
 import React from 'react';
-
-const subtext = {
-	position: 'relative',
-	left: 10,
-	paddingLeft: 5,
-	fontSize: 10,
-	width: '220px',
-	flexWrap: 'wrap',
-};
+import { View, Text } from '@react-pdf/renderer';
 
 const ClientAddress = (context) => {
 	const { config: { obj: { client }}, data: styles } = context;
 
-	return <View style={ [styles.subView, { height: '100px' }] }>
+	return <View style={ [styles.subView, { right: 10 }] }>
 		{client.address.map((address, i) =>
-			<Text key={ i } style={ subtext }>
+			<Text key={ i } style={ styles.text }>
 				<Text style={ styles.light }>{address}</Text>
 			</Text>)}
 	</View>;
