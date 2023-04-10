@@ -7,7 +7,7 @@ const Address = (context) => {
 	const { data: styles } = context;
 
 	return (
-		<View style={ [styles.view, { right: '20%' }] }>
+		<View style={ [styles.view] }>
 			<VendorAddress { ...context }/>
 			<ClientAddress { ...context }/>
 		</View>);

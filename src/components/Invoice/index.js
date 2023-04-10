@@ -14,8 +14,7 @@ Font.register({
 	family: 'Roboto-Bold',
 	src: RobotoBold,
 });
-Font.register({ family: 'Roboto-Light',
-	src: RobotoLight });
+Font.register({ family: 'Roboto-Light', src: RobotoLight });
 
 const styles = StyleSheet.create({
 	page: {
@@ -27,8 +26,9 @@ const styles = StyleSheet.create({
 	},
 	view: {
 		flexDirection: 'row',
-		justifyContent: 'space-around',
-
+		justifyContent: 'space-between',
+		width: '85%',
+		marginLeft: 25,
 	},
 	text: {
 		fontSize: 10,
@@ -45,29 +45,29 @@ const styles = StyleSheet.create({
 	},
 	subtext: {
 		fontSize: 10,
-		marginLeft: 25,
 		flex: 1,
 	},
 	subView: {
 		flexDirection: 'column',
 	},
-	position: { position: 'relative', right: 33 },
 });
 
 const Invoice = (context) => {
 	const extendedContext = { ...{ ...context, data: styles }};
 
-	return <Document>
-		<Page size="A4" style={ styles.page }>
-			<InvoiceSection { ...extendedContext }/>
-			<AddressSection { ...extendedContext }/>
-			<Address { ...extendedContext }/>
-			<GovtDoc { ...extendedContext }/>
-			<ChargesTable { ...context }/>
-			<BillingTable { ...context }/>
-			<Description { ...extendedContext }/>
-		</Page>
-	</Document>;
+	return (
+		<Document>
+			<Page size="A4" style={ styles.page }>
+				<InvoiceSection { ...extendedContext }/>
+				<AddressSection { ...extendedContext }/>
+				<Address { ...extendedContext }/>
+				<GovtDoc { ...extendedContext }/>
+				<ChargesTable { ...context }/>
+				<BillingTable { ...context }/>
+				<Description { ...extendedContext }/>
+			</Page>
+		</Document>
+	);
 };
 
 export default Invoice;
