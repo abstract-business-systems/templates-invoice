@@ -9,4 +9,8 @@ const getBillingDetails = (context) => {
 	};
 };
 
-export default getBillingDetails;
+const InvoiceManager = {
+	getBillingDetails,
+};
+
+export default InvoiceManager;

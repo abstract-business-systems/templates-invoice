@@ -1,11 +1,11 @@
 import React from 'react';
 import { map, values } from '@laufire/utils/collection';
 import { View, Text } from '@react-pdf/renderer';
-import getBillingDetails from '../../services/getBillingDetails';
+import InvoiceManager from '../../services/InvoiceManager';
 
 const BillingDetails = (context) => {
 	const { styles, config: { obj }} = context;
-	const billingDetails = getBillingDetails(context);
+	const billingDetails = InvoiceManager.getBillingDetails(context);
 
 	return <View style={ [styles.row, { borderLeft: '1.5px solid #EEE' }] }>
 		{values(map(billingDetails, (value, key) =>
