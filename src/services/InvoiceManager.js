@@ -1,3 +1,5 @@
+import dayjs from 'dayjs';
+
 const getBillingDetails = (context) => {
 	const { config: { digits,
 		obj: { subTotal, taxes, grandTotal }}} = context;
@@ -29,11 +31,15 @@ const getFilteredItems = (context) => {
 
 const isProduct = ({ data: { item: { type }}}) => type === 'product';
 
+const getInvoiceDate = ({ config: { obj: { invoiceDate }}}) =>
+	dayjs(invoiceDate).format('DD-MM-YYYY');
+
 const InvoiceManager = {
 	getBillingDetails,
 	getBankDetails,
 	getFilteredItems,
 	isProduct,
+	getInvoiceDate,
 };
 
 export default InvoiceManager;

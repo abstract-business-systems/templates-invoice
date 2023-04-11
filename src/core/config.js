@@ -1,11 +1,20 @@
+/* eslint-disable max-len */
 const config = {
 	obj: {
-		bankDetails: {
-			accountType: 'Savings',
-			accountNo: 55955579016957,
-			accountHolderName: 'Jobber',
-			ifsc: 'ICIC0000009',
-			branchName: 'Ratty',
+		invoiceDate: new Date('2022-09-28T18:29:50.000Z'),
+		id: 'fdg22092801',
+		subTotal: 4727.5,
+		taxes: 472.75,
+		grandTotal: 4254.75,
+		amountInWords:
+			'Four Thousand Two Hundred Fifty Four Rupees And Seventy Five Paise Only',
+		vendor: {
+			address: [
+				'17-261, Mean Street,Jobber, Heading Town,',
+				'Broch - 340 321.',
+			],
+			govtDoc: { id: 'R7909FFJPA', type: 'PAN' },
+			name: 'Fluf Dug',
 		},
 		client: {
 			address: [
@@ -15,61 +24,23 @@ const config = {
 			],
 			govtDoc: { id: '33AAXCA0332P1ZC', type: 'GSTIN' },
 		},
-		grandTotal: 4432.50,
-		invoiceDate: '28-08-2022',
-		invoiceNo: 'rty22082801',
+		bankDetails: {
+			accountHolderName: 'Fluf Dug',
+			accountNo: 20261000031380,
+			accountType: 'Savings',
+			branchName: 'Mean St',
+			ifsc: 'IDBA0000138',
+		},
 		items: [
 			{
-				amount: 2400,
 				item: 'Consulting charges',
-				unit: 'hrs',
-				quantity: 120,
-				rate: 20,
 				type: 'product',
-			},
-			{
-				amount: 2400,
-				item: 'Consulting charges',
 				unit: 'hrs',
-				quantity: 120,
-				rate: 20,
-				type: 'product',
+				quantity: 94.55,
+				rate: 50,
+				amount: 4727.5,
 			},
-			{
-				amount: 2400,
-				item: 'Consulting charges',
-				unit: 'hrs',
-				quantity: 120,
-				rate: 20,
-				type: 'product',
-			},
-			{
-				amount: 2400,
-				item: 'Consulting charges',
-				unit: 'hrs',
-				quantity: 120,
-				rate: 20,
-				type: 'product',
-			},
-			{
-				item: 'Tax',
-				amount: 2400,
-				type: 'tax',
-			},
-			{ amount: 2525, item: 'Other charges', type: 'product' },
 		],
-		subTotal: 4925.00,
-		vendor: {
-			address: [
-				'303-A, 2nd Broch Street,',
-				'Jobber, Heading Town,',
-				'Mean - 340 322.',
-			],
-			govtDoc: { id: 'RPK494EO5D', type: 'PAN' },
-			name: 'Ratty',
-		},
-		amountInWords:
-			'Four Thousand Four Hundred Thirty Two Rupees And Fifty Paise Only',
 	},
 	hsnOrSAC: '-',
 	digits: 2,
