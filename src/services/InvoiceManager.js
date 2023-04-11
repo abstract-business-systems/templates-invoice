@@ -27,10 +27,13 @@ const getFilteredItems = (context) => {
 	return items.filter((item) => item.type === data);
 };
 
+const isProduct = ({ data: { item: { type }}}) => type === 'product';
+
 const InvoiceManager = {
 	getBillingDetails,
 	getBankDetails,
 	getFilteredItems,
+	isProduct,
 };
 
 export default InvoiceManager;

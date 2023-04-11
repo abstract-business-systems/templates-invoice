@@ -1,10 +1,11 @@
 import React from 'react';
 import { View, Text } from '@react-pdf/renderer';
+import InvoiceManager from '../../services/InvoiceManager';
 
 const Item = (context) => {
 	const { config: { hsnOrSAC }, styles, data } = context;
-	const { item: { item, rate, type, amount, quantity, unit }, i } = data;
-	const isProduct = type === 'product';
+	const { item: { item, rate, amount, quantity, unit }, i } = data;
+	const isProduct = InvoiceManager.isProduct(context);
 
 	return <View style={ [styles.row, styles.light] } wrap={ false }>
 		<Text style={ [styles.row1, styles.num] }> {isProduct && i + 1}
