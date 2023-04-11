@@ -9,8 +9,21 @@ const getBillingDetails = (context) => {
 	};
 };
 
+const getBankDetails = (context) => {
+	const { config: { obj: { bankDetails }}} = context;
+
+	return {
+		'Name:': bankDetails.accountHolderName,
+		'IFSC:': bankDetails.ifsc,
+		'Account No:': bankDetails.accountNo,
+		'Acc Type:': bankDetails.accountType,
+		'Branch Name:': bankDetails.branchName,
+	};
+};
+
 const InvoiceManager = {
 	getBillingDetails,
+	getBankDetails,
 };
 
 export default InvoiceManager;

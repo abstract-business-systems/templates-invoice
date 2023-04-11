@@ -1,11 +1,11 @@
 const config = {
 	obj: {
 		bankDetails: {
-			'Acc Type': 'Savings',
-			'Account No': 55955579016957,
-			'Branch Name': 'Jobber',
-			'IFSC': 'ICIC0000009',
-			'Name': 'Ratty',
+			accountType: 'Savings',
+			accountNo: 55955579016957,
+			accountHolderName: 'Jobber',
+			ifsc: 'ICIC0000009',
+			branchName: 'Ratty',
 		},
 		client: {
 			address: [
