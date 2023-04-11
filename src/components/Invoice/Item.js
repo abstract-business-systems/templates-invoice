@@ -3,7 +3,7 @@ import { View, Text } from '@react-pdf/renderer';
 
 const Item = (context) => {
 	const { config: { hsnOrSAC }, styles, data } = context;
-	const { item: { item, rate, type, amount, quantity = {}}, i } = data;
+	const { item: { item, rate, type, amount, quantity, unit }, i } = data;
 	const isProduct = type === 'product';
 
 	return <View style={ [styles.row, styles.light] } wrap={ false }>
@@ -14,8 +14,8 @@ const Item = (context) => {
 			{isProduct && hsnOrSAC}
 		</Text>
 		<View style={ [styles.row1, styles.rightAlign, styles.quantity] }>
-			<Text style={ { fontSize: 9 } }>{quantity.count}</Text>
-			<Text style={ { fontSize: 8 } }>{quantity.unit}</Text>
+			<Text style={ { fontSize: 9 } }>{quantity}</Text>
+			<Text style={ { fontSize: 8 } }>{unit}</Text>
 		</View>
 		<Text style={ [styles.row1, styles.hsn, styles.rightAlign] }>
 			{rate}</Text>
