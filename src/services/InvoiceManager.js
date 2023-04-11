@@ -21,9 +21,16 @@ const getBankDetails = (context) => {
 	};
 };
 
+const getFilteredItems = (context) => {
+	const { config: { obj: { items }}, data } = context;
+
+	return items.filter((item) => item.type === data);
+};
+
 const InvoiceManager = {
 	getBillingDetails,
 	getBankDetails,
+	getFilteredItems,
 };
 
 export default InvoiceManager;

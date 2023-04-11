@@ -2,9 +2,9 @@ import React from 'react';
 import Item from './Item';
 
 const Items = (context) => {
-	const { data: { items }} = context;
+	const { data } = context;
 
-	return items.map((item, i) =>
+	return data.map((item, i) =>
 		<Item key={ i } { ...{ ...context, data: { item, i }} }/>);
 };
 

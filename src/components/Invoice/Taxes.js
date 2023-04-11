@@ -1,12 +1,12 @@
 import React from 'react';
 import Items from './Items';
+import InvoiceManager from '../../services/InvoiceManager';
 
 const Taxes = (context) => {
-	const { config: { obj: { items }}} = context;
-	const filteredTaxes = items.filter((item) => item.type === 'tax');
-	const extendedContext = { ...context, data: { items: filteredTaxes }};
+	const filteredTaxes = InvoiceManager
+		.getFilteredItems({ ...context, data: 'tax' });
 
-	return <Items { ...extendedContext }/>;
+	return <Items { ...{ ...context, data: filteredTaxes } }/>;
 };
 
 export default Taxes;
