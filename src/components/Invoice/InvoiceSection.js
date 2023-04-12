@@ -7,13 +7,15 @@ const InvoiceSection = (context) => {
 	const { data: styles } = context;
 	const invoiceDetails = InvoiceManager.getInvoiceDetails(context);
 
-	return <View style={ styles.view }>
-		{values(map(invoiceDetails, (value, key) =>
-			<Text style={ styles.subtext }>
-				<Text style={ styles.bold }>{key}</Text>
-				<Text style={ styles.light }> {value}</Text>
-			</Text>))}
-	</View>;
+	return (
+		<View style={ styles.view }>
+			{values(map(invoiceDetails, (value, key) =>
+				<Text style={ styles.subtext }>
+					<Text style={ styles.bold }>{key}</Text>
+					<Text style={ styles.light }> {value}</Text>
+				</Text>))}
+		</View>
+	);
 };
 
 export default InvoiceSection;

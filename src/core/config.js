@@ -44,6 +44,7 @@ const config = {
 	},
 	hsnOrSAC: '-',
 	digits: 2,
+	addressHeader: ['Vendor Address:', 'Client Billing Address:'],
 };
 
 export default config;

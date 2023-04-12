@@ -2,16 +2,16 @@ import React from 'react';
 import { View, Text } from '@react-pdf/renderer';
 
 const AddressSection = (context) => {
-	const { data: styles } = context;
+	const { data: styles, config: { addressHeader }} = context;
 
-	return <View style={ styles.view }>
-		<Text style={ styles.subtext }>
-			<Text style={ styles.bold }>Vendor Address:</Text>
-		</Text>
-		<Text style={ [styles.subtext, styles.position] }>
-			<Text style={ styles.bold }>Client Billing Address: </Text>
-		</Text>
-	</View>;
+	return (
+		<View style={ styles.view }>
+			{addressHeader.map((address, i) =>
+				<Text key={ i } style={ styles.subtext }>
+					<Text style={ styles.bold }>{address}</Text>
+				</Text>)}
+		</View>
+	);
 };
 
 export default AddressSection;
