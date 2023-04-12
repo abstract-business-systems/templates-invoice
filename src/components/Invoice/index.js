@@ -32,8 +32,9 @@ const styles = StyleSheet.create({
 	},
 	text: {
 		fontSize: 10,
-		width: '50%',
 		wordWrap: 'wrap',
+		width: '80%',
+		overflow: 'hidden',
 	},
 	bold: {
 		fontFamily: 'Roboto-Bold',
@@ -49,6 +50,9 @@ const styles = StyleSheet.create({
 	},
 	subView: {
 		flexDirection: 'column',
+		marginRight: 'auto',
+		width: '80%',
+		height: 80,
 	},
 });
 
