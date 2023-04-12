@@ -1,13 +1,5 @@
-import { Text } from '@react-pdf/renderer';
-import React from 'react';
+import GenDoc from './GenDoc';
 
-const ClientDoc = (context) => {
-	const { data: styles, config: { obj: { client }}} = context;
-
-	return <Text style={ [styles.subtext, styles.position, { paddingTop: 5 }] }>
-		<Text style={ styles.bold }>{client.govtDoc.type}: </Text>
-		<Text style={ styles.light }>{client.govtDoc.id}</Text>
-	</Text>;
-};
+const ClientDoc = (context) => GenDoc('client')(context);
 
 export default ClientDoc;
