@@ -1,22 +1,18 @@
 import React from 'react';
 import { Text, View } from '@react-pdf/renderer';
+
 const subtext = {
-	width: '90%',
 	fontSize: 10,
 	fontFamily: 'Roboto-Light',
+	paddingLeft: 5,
 };
-const Description = () =>
-	<View style={ {
-		flexDirection: 'column', alignItems: 'center', paddingTop: 5,
-	} }
-	>
-		<Text style={ [subtext, { paddingLeft: 5 }] }>
+const Description = ({ data }) =>
+	<View style={ [data.view, { textAlign: 'center' }] }>
+		<Text style={ subtext }>
 			Payments should be made within 15 working days
 			from the date of invoice.
+			Digitally prepared document.Signature not needed.
 		</Text>;
-		<Text style={ [subtext, { paddingLeft: 70 }] }>
-			Digitally prepared document.  Signature not needed.
-		</Text>
 	</View>;
 
 export default Description;
