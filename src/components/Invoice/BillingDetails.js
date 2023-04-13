@@ -11,13 +11,13 @@ const BillingDetails = (context) => {
 		{values(map(billingDetails, (value, key) =>
 			<View
 				key={ key }
-				style={ [styles.row1, styles.borderTop] }
+				style={ [styles.subRow, styles.borderTop] }
 			>
 				<Text style={ styles.bold }>{key}</Text>
 				<Text style={ styles.light }>{value}
 				</Text>
 			</View>))}
-		<View style={ [styles.row1, styles.borderTop] }>
+		<View style={ [styles.subRow, styles.borderTop] }>
 			<Text style={ styles.bold }>Amount in words:
 				<Text style={ styles.light }>{ obj.amountInWords}</Text>
 			</Text>

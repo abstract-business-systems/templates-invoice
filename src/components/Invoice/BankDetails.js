@@ -13,7 +13,7 @@ const BankDetails = (context) => {
 		{values(map(bankDetails, (value, key) =>
 			<View
 				key={ key }
-				style={ [styles.row1, { marginLeft: 5, paddingRight: 5 }] }
+				style={ [styles.subRow, { marginLeft: 5, paddingRight: 5 }] }
 			>
 				<Text style={ styles.bold }>{key}</Text>
 				<Text style={ styles.light }>{value}</Text>

@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
 		fontFamily: 'Roboto-Light',
 		padding: 5,
 	},
-	row1: {
+	subRow: {
 		flexDirection: 'row',
 		width: '100%',
 		justifyContent: 'space-between',
