@@ -17,7 +17,6 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		borderTop: '1.5px solid #EEE',
 		fontSize: 10,
-
 	},
 	bold: {
 		fontFamily: 'Roboto-Bold',
@@ -25,7 +24,7 @@ const styles = StyleSheet.create({
 	light: {
 		fontFamily: 'Roboto-Light',
 	},
-	row1: {
+	subRow: {
 		width: '15%',
 		borderLeft: '1.5px solid #EEE',
 		padding: '3 3 10 5',
