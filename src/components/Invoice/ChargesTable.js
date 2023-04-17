@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
 		borderTop: 'none',
 	},
 	row: {
-		display: 'flex',
 		flexDirection: 'row',
 		borderTop: '1.5px solid #EEE',
 		fontSize: 10,
@@ -25,16 +24,13 @@ const styles = StyleSheet.create({
 		fontFamily: 'Roboto-Light',
 	},
 	subRow: {
-		width: '15%',
+		width: '13%',
 		borderLeft: '1.5px solid #EEE',
 		padding: '3 3 10 5',
 	},
 	num: {
-		width: '10%',
+		width: '8%',
 		borderLeft: 'none',
-	},
-	hsn: {
-		width: '13%',
 	},
 	item: {
 		width: '50%',
@@ -43,7 +39,6 @@ const styles = StyleSheet.create({
 		textAlign: 'right',
 	},
 	quantity: {
-		display: 'flex',
 		flexDirection: 'column',
 	},
 });
