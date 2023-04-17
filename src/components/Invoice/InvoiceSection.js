@@ -4,7 +4,7 @@ import InvoiceManager from '../../services/InvoiceManager';
 import Helper from './Helper';
 
 const InvoiceSection = (context) => {
-	const { data: styles, config: { obj: { id }}} = context;
+	const { styles, config: { obj: { id }}} = context;
 	const invoiceDate = InvoiceManager.getInvoiceDate(context) ;
 
 	return (

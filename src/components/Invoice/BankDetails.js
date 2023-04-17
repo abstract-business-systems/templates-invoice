@@ -4,7 +4,7 @@ import { View, Text } from '@react-pdf/renderer';
 import InvoiceManager from '../../services/InvoiceManager';
 
 const BankDetails = (context) => {
-	const { data: styles } = context;
+	const { style: styles } = context;
 	const bankDetails = InvoiceManager.getBankDetails(context);
 
 	return <View style={ styles.row }>

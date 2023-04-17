@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from '@react-pdf/renderer';
 
 const AddressSection = (context) => {
-	const { data: styles, config: { addressHeaders }} = context;
+	const { styles, config: { addressHeaders }} = context;
 
 	return (
 		<View style={ styles.view }>

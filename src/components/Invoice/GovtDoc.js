@@ -4,7 +4,7 @@ import VendorDoc from './VendorDoc';
 import ClientDoc from './ClientDoc';
 
 const GovtDoc = (context) => {
-	const { data: styles } = context;
+	const { styles } = context;
 
 	return <View style={ styles.view }>
 		<VendorDoc { ...context }/>

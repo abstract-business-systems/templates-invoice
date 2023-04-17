@@ -4,7 +4,7 @@ import VendorAddress from './VendorAddress';
 import ClientAddress from './ClientAddress';
 
 const Address = (context) => {
-	const { data: styles } = context;
+	const { styles } = context;
 
 	return (
 		<View style={ [styles.view] }>

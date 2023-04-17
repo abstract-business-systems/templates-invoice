@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text } from '@react-pdf/renderer';
 
-const Helper = ({ data: styles, header, value }) =>
+const Helper = ({ styles, header, value }) =>
 	<Text style={ styles.subtext }>
 		<Text style={ styles.bold }>{header}:</Text>
 		<Text style={ styles.light }>{ value}</Text>

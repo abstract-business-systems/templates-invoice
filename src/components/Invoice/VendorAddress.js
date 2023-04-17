@@ -2,16 +2,15 @@ import { Text, View } from '@react-pdf/renderer';
 import React from 'react';
 
 const VendorAddress = (context) => {
-	const { config: { obj: { vendor }}, data: styles } = context;
+	const { config: { obj: { vendor }}, styles } = context;
 
 	return <View style={ styles.subView }>
-		<Text style={ styles.text }>
-			<Text style={ styles.light }>{vendor.name}</Text>
-		</Text>
+		<Text style={ [styles.light, styles.text] }>{vendor.name}</Text>
 		{ vendor.address.map((address, i) =>
-			<Text key={ i } style={ styles.text }>
-				<Text style={ styles.light }>{address}</Text>
-			</Text>)}
+			<Text
+				key={ i }
+				style={ [styles.light, styles.text] }
+			>{address}</Text>)}
 	</View>;
 };
 

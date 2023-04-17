@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 });
 const BillingTable = (context) =>
 	<View style={ styles.table }>
-		<BankDetails { ...{ ...context, data: styles } }/>
+		<BankDetails { ...{ ...context, style: styles } }/>
 		<BillingDetails { ...{ ...context, styles } }/>
 	</View>
 ;

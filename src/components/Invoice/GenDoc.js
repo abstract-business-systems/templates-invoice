@@ -3,7 +3,7 @@ import React from 'react';
 
 const GenDoc = (action) => {
 	const res = (context) => {
-		const { data: styles, config: { obj }} = context;
+		const { styles, config: { obj }} = context;
 		const doc = obj[action];
 
 		return (

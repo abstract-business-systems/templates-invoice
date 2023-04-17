@@ -6,8 +6,9 @@ const subtext = {
 	fontFamily: 'Roboto-Light',
 	paddingLeft: 5,
 };
-const Description = ({ data }) =>
-	<View style={ [data.view, { textAlign: 'center' }] }>
+
+const Description = ({ styles }) =>
+	<View style={ [styles.view, { textAlign: 'center' }] }>
 		<Text style={ subtext }>
 			Payments should be made within 15 working days
 			from the date of invoice.
