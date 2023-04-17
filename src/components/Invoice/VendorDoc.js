@@ -1,6 +1,13 @@
 import React from 'react';
-import Doc from './Doc';
+import HelperText from './HelperText';
 
-const VendorDoc = (context) => <Doc { ...{ ...context, data: 'vendor' } }/>;
+const VendorDoc = (context) => {
+	const { config: { obj: { vendor: { govtDoc }}}} = context;
+
+	return (
+		<HelperText { ...{ ...context,
+			header: govtDoc.type, value: govtDoc.id } }
+		/>);
+};
 
 export default VendorDoc;

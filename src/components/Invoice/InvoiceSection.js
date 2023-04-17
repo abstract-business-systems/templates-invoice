@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from '@react-pdf/renderer';
 import InvoiceManager from '../../services/InvoiceManager';
-import Helper from './Helper';
+import HelperText from './HelperText';
 
 const InvoiceSection = (context) => {
 	const { styles, config: { obj: { id }}} = context;
@@ -9,8 +9,8 @@ const InvoiceSection = (context) => {
 
 	return (
 		<View style={ styles.view }>
-			<Helper { ...{ ...context, header: 'Invoice No', value: id } }/>
-			<Helper { ...{ ...context,
+			<HelperText { ...{ ...context, header: 'Invoice No', value: id } }/>
+			<HelperText { ...{ ...context,
 				header: 'Invoice Date', value: invoiceDate } }
 			/>
 		</View>
