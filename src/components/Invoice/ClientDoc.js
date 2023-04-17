@@ -1,5 +1,6 @@
-import GenDoc from './GenDoc';
+import React from 'react';
+import Doc from './Doc';
 
-const ClientDoc = (context) => GenDoc('client')(context);
+const ClientDoc = (context) => <Doc { ...{ ...context, data: 'client' } }/>;
 
 export default ClientDoc;

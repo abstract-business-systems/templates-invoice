@@ -1,5 +1,6 @@
-import GenDoc from './GenDoc';
+import React from 'react';
+import Doc from './Doc';
 
-const VendorDoc = (context) => GenDoc('vendor')(context);
+const VendorDoc = (context) => <Doc { ...{ ...context, data: 'vendor' } }/>;
 
 export default VendorDoc;
