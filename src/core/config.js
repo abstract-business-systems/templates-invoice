@@ -6,8 +6,9 @@ const config = {
 		subTotal: 4727.5,
 		taxes: 472.75,
 		grandTotal: 4254.75,
+		currency: 'INR',
 		amountInWords:
-			'Four Thousand Two Hundred Fifty Four Rupees And Seventy Five Paise Only',
+			'INR Four Thousand Two Hundred Fifty Four point Seven Five.',
 		vendor: {
 			address: [
 				'17-261, Mean Street,Jobber, Heading Town,',
@@ -44,6 +45,7 @@ const config = {
 	},
 	hsnOrSAC: '-',
 	digits: 2,
+	pageSize: 'A4',
 	addressHeaders: ['Vendor Address', 'Client Billing Address'],
 };
 

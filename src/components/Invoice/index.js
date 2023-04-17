@@ -9,11 +9,11 @@ import ChargesTable from './ChargesTable';
 import BillingTable from './BillingTable';
 
 const Invoice = (context) => {
-	const { styles } = context;
+	const { styles, config: { pageSize }} = context;
 
 	return (
 		<Document>
-			<Page size="A4" style={ styles.page }>
+			<Page { ...{ style: styles.page, size: pageSize } }>
 				<InvoiceSection { ...context }/>
 				<AddressSection { ...context }/>
 				<Address { ...context }/>
