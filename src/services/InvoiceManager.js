@@ -23,16 +23,6 @@ const getBankDetails = (context) => {
 	};
 };
 
-const getInvoiceDetails = (context) => {
-	const { config: { obj: { id }}} = context;
-	const invoiceDate = getInvoiceDate(context);
-
-	return {
-		'Invoice No:': id,
-		'Invoice Date:': invoiceDate,
-	};
-};
-
 const getFilteredItems = (context) => {
 	const { config: { obj: { items }}, data } = context;
 
@@ -50,7 +40,6 @@ const InvoiceManager = {
 	getFilteredItems,
 	isProduct,
 	getInvoiceDate,
-	getInvoiceDetails,
 };
 
 export default InvoiceManager;

@@ -1,19 +1,18 @@
 import React from 'react';
-import { View, Text } from '@react-pdf/renderer';
-import { map, values } from '@laufire/utils/collection';
+import { View } from '@react-pdf/renderer';
 import InvoiceManager from '../../services/InvoiceManager';
+import Helper from './Helper';
 
 const InvoiceSection = (context) => {
-	const { data: styles } = context;
-	const invoiceDetails = InvoiceManager.getInvoiceDetails(context);
+	const { data: styles, config: { obj: { id }}} = context;
+	const invoiceDate = InvoiceManager.getInvoiceDate(context) ;
 
 	return (
 		<View style={ styles.view }>
-			{values(map(invoiceDetails, (value, key) =>
-				<Text style={ styles.subtext }>
-					<Text style={ styles.bold }>{key}</Text>
-					<Text style={ styles.light }> {value}</Text>
-				</Text>))}
+			<Helper { ...{ ...context, header: 'Invoice No', value: id } }/>
+			<Helper { ...{ ...context,
+				header: 'Invoice Date', value: invoiceDate } }
+			/>
 		</View>
 	);
 };
