@@ -4,7 +4,6 @@ const config = {
 		invoiceDate: new Date('2022-09-28T18:29:50.000Z'),
 		id: 'fdg22092801',
 		subTotal: 4727.5,
-		taxes: 472.75,
 		grandTotal: 4254.75,
 		currency: 'INR',
 		amountInWords:

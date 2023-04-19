@@ -8,7 +8,7 @@ const Item = (context) => {
 	const isProduct = InvoiceManager.isProduct(context);
 
 	return <View style={ [styles.row, styles.light] } wrap={ false }>
-		<Text style={ [styles.subRow, styles.num] }> {isProduct && i + 1}
+		<Text style={ [styles.subRow, styles.num] }>{isProduct && i + 1}
 		</Text>
 		<Text style={ [styles.subRow, styles.item] }>{item}</Text>
 		<Text style={ [styles.subRow, { textAlign: 'center' }] }>
@@ -18,8 +18,7 @@ const Item = (context) => {
 			<Text style={ { fontSize: 9 } }>{quantity}</Text>
 			<Text style={ { fontSize: 8 } }>{unit}</Text>
 		</View>
-		<Text style={ [styles.subRow, styles.rightAlign] }>
-			{rate}</Text>
+		<Text style={ [styles.subRow, styles.rightAlign] }>{rate}</Text>
 		<Text style={ [styles.subRow, styles.rightAlign] }>{amount}</Text>
 	</View>;
 };
