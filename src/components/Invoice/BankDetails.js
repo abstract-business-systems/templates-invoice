@@ -11,7 +11,7 @@ const BankDetails = (context) => {
 		{bankDetails.map((bankDetail, key) =>
 			<View
 				key={ key }
-				style={ [styles.subRow, { padding: '5 0 0 5' }] }
+				style={ [styles.subRow, { paddingLeft: 5 }] }
 			>
 				<Text style={ [styles.bold] }>
 					{bankDetail.title}:</Text>

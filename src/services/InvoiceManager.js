@@ -1,15 +1,27 @@
 import dayjs from 'dayjs';
 
-const getBillingDetails = (context) => {
+const getNormalizedTotals = (context) => {
 	const { config: { digits,
 		obj: { subTotal, taxes, grandTotal }}} = context;
 
 	return {
-		'Sub Total': subTotal.toFixed(digits),
-		'Taxes': taxes?.toFixed(digits) || '-',
-		'Grand Total': grandTotal.toFixed(digits),
+		subTotal: subTotal.toFixed(digits),
+		taxes: taxes?.toFixed(digits) || '-',
+		grandTotal: grandTotal.toFixed(digits),
 	};
 };
+
+const getBillingDetails = (context) => {
+	const { subTotal, taxes, grandTotal }
+	= getNormalizedTotals(context);
+
+	return [
+		{ header: 'Sub Total', value: subTotal },
+		{ header: 'Taxes', value: taxes },
+		{ header: 'Grand Total', value: grandTotal },
+	];
+};
+
 const getBankDetails = (context) => {
 	const { config: { obj: { bankDetails }}} = context;
 
