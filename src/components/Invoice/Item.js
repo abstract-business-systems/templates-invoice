@@ -11,14 +11,14 @@ const Item = (context) => {
 		<Text style={ [styles.subRow, styles.num] }> {isProduct && i + 1}
 		</Text>
 		<Text style={ [styles.subRow, styles.item] }>{item}</Text>
-		<Text style={ [styles.subRow, styles.hsn, { textAlign: 'center' }] }>
+		<Text style={ [styles.subRow, { textAlign: 'center' }] }>
 			{isProduct && hsnOrSAC}
 		</Text>
 		<View style={ [styles.subRow, styles.rightAlign, styles.quantity] }>
 			<Text style={ { fontSize: 9 } }>{quantity}</Text>
 			<Text style={ { fontSize: 8 } }>{unit}</Text>
 		</View>
-		<Text style={ [styles.subRow, styles.hsn, styles.rightAlign] }>
+		<Text style={ [styles.subRow, styles.rightAlign] }>
 			{rate}</Text>
 		<Text style={ [styles.subRow, styles.rightAlign] }>{amount}</Text>
 	</View>;

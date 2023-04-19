@@ -7,20 +7,22 @@ import Description from './Description';
 import AddressSection from './AddressSection';
 import ChargesTable from './ChargesTable';
 import BillingTable from './BillingTable';
+import styles from './styles';
 
 const Invoice = (context) => {
-	const { styles, config: { pageSize }} = context;
+	const { config: { pageSize }} = context;
+	const extendedContext = { ...context, styles };
 
 	return (
 		<Document>
 			<Page { ...{ style: styles.page, size: pageSize } }>
-				<InvoiceSection { ...context }/>
-				<AddressSection { ...context }/>
-				<Address { ...context }/>
-				<GovtDoc { ...context }/>
-				<ChargesTable { ...context }/>
-				<BillingTable { ...context }/>
-				<Description { ...context }/>
+				<InvoiceSection { ...extendedContext }/>
+				<AddressSection { ...extendedContext }/>
+				<Address { ...extendedContext }/>
+				<GovtDoc { ...extendedContext }/>
+				<ChargesTable { ...extendedContext }/>
+				<BillingTable { ...extendedContext }/>
+				<Description { ...extendedContext }/>
 			</Page>
 		</Document>
 	);

@@ -1,15 +1,11 @@
+/* eslint-disable max-len */
 import { StyleSheet, Font } from '@react-pdf/renderer';
-import RobotoBold from '../../fonts/RobotoMono-Bold.ttf';
-import RobotoLight from '../../fonts/RobotoMono-Light.ttf';
 
-Font.register({ family: 'Roboto-Bold', src: RobotoBold });
-Font.register({ family: 'Roboto-Light', src: RobotoLight });
+Font.register({ family: 'Roboto-Light', src: 'https://cdn.jsdelivr.net/npm/roboto-mono-webfont@2.0.986/fonts/RobotoMono-Light.ttf' });
+Font.register({ family: 'Roboto-Bold', src: 'https://cdn.jsdelivr.net/npm/roboto-mono-webfont@2.0.986/fonts/RobotoMono-Bold.ttf' });
 
 const styles = StyleSheet.create({
-	frame: {
-		width: '90vw',
-		height: '90vh',
-	},
+
 	page: {
 		margin: 20,
 		paddingTop: 90,
