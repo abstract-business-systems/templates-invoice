@@ -10,17 +10,16 @@ const getBillingDetails = (context) => {
 		'Grand Total': grandTotal.toFixed(digits),
 	};
 };
-
 const getBankDetails = (context) => {
 	const { config: { obj: { bankDetails }}} = context;
 
-	return {
-		'Name:': bankDetails.accountHolderName,
-		'IFSC:': bankDetails.ifsc,
-		'Account No:': bankDetails.accountNo,
-		'Acc Type:': bankDetails.accountType,
-		'Branch Name:': bankDetails.branchName,
-	};
+	return [
+		{ title: 'Name', value: bankDetails.accountHolderName },
+		{ title: 'IFSC', value: bankDetails.ifsc },
+		{ title: 'Account No', value: bankDetails.accountNo },
+		{ title: 'Acc Type', value: bankDetails.accountType },
+		{ title: 'Branch Name', value: bankDetails.branchName },
+	];
 };
 
 const getFilteredItems = (context) => {

@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
 		borderTop: 'none',
 	},
 	row: {
-		display: 'flex',
 		flexDirection: 'column',
 		paddingBottom: 30,
 		fontSize: 10,
@@ -22,10 +21,13 @@ const styles = StyleSheet.create({
 	bold: {
 		fontFamily: 'Roboto-Bold',
 		padding: 5,
+		flex: 1,
 	},
 	light: {
 		fontFamily: 'Roboto-Light',
 		padding: 5,
+		flex: 1,
+		textAlign: 'right',
 	},
 	subRow: {
 		flexDirection: 'row',
@@ -38,7 +40,6 @@ const BillingTable = (context) =>
 	<View style={ styles.table }>
 		<BankDetails { ...{ ...context, style: styles } }/>
 		<BillingDetails { ...{ ...context, styles } }/>
-	</View>
-;
+	</View>;
 
 export default BillingTable;
