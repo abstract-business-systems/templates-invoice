@@ -50,7 +50,6 @@ const config = {
 	hsnOrSAC: '-',
 	digits: 2,
 	pageSize: 'A4',
-	addressHeaders: ['Vendor Address', 'Client Billing Address'],
 };
 
 export default config;

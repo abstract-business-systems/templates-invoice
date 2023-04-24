@@ -2,13 +2,14 @@ import React from 'react';
 import { View, Text } from '@react-pdf/renderer';
 
 const AddressSection = (context) => {
-	const { styles, config: { addressHeaders }} = context;
+	const { styles } = context;
 
 	return (
 		<View style={ styles.view }>
-			{addressHeaders.map((addressHeader, i) =>
-				<Text key={ i } style={ [styles.bold, styles.subtext] }>
-					{addressHeader}:</Text>)}
+			<Text style={ [styles.bold, styles.subtext] }>Vendor Address:</Text>
+			<Text
+				style={ [styles.bold, styles.subtext] }
+			>Client Billing Address:</Text>
 		</View>
 	);
 };
