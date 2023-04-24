@@ -2,12 +2,12 @@ import React from 'react';
 import { Page, Document } from '@react-pdf/renderer';
 import InvoiceSection from './InvoiceSection';
 import GovtDoc from './GovtDoc';
-import Address from './Address';
 import Description from './Description';
 import AddressSection from './AddressSection';
 import ChargesTable from './ChargesTable';
 import BillingTable from './BillingTable';
 import styles from './styles';
+import AddressLabels from './AddressLabels';
 
 const Invoice = (context) => {
 	const { config: { pageSize }} = context;
@@ -18,7 +18,7 @@ const Invoice = (context) => {
 			<Page { ...{ style: styles.page, size: pageSize } }>
 				<InvoiceSection { ...extendedContext }/>
 				<AddressSection { ...extendedContext }/>
-				<Address { ...extendedContext }/>
+				<AddressLabels { ...extendedContext }/>
 				<GovtDoc { ...extendedContext }/>
 				<ChargesTable { ...extendedContext }/>
 				<BillingTable { ...extendedContext }/>

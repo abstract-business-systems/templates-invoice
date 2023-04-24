@@ -3,7 +3,7 @@ import { View } from '@react-pdf/renderer';
 import VendorAddress from './VendorAddress';
 import ClientAddress from './ClientAddress';
 
-const Address = (context) => {
+const AddressLabels = (context) => {
 	const { styles } = context;
 
 	return (
@@ -13,4 +13,4 @@ const Address = (context) => {
 		</View>);
 };
 
-export default Address;
+export default AddressLabels;
