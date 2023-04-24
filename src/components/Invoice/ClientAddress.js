@@ -1,19 +1,10 @@
 import React from 'react';
-import { View, Text } from '@react-pdf/renderer';
+import Address from './Address';
 
 const ClientAddress = (context) => {
-	const { config: { obj: { client: { address }}}, styles } = context;
+	const { config: { obj: { client }}} = context;
 
-	return <View style={ styles.subView }>
-		{ address.lines.map((line, i) =>
-			<Text
-				key={ i }
-				style={ [styles.light, styles.text] }
-			>{line}</Text>)}
-		<Text style={ [styles.light, styles.text] }>{address.state}</Text>
-		<Text style={ [styles.light, styles.text] }>{address.country}</Text>
-		<Text style={ [styles.light, styles.text] }>{address.zipCode}</Text>
-	</View>;
+	return <Address { ...{ ...context, data: client } }/>;
 };
 
 export default ClientAddress;

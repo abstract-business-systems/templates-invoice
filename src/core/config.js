@@ -10,10 +10,9 @@ const config = {
 			' INR Two Thousand Five Hundred Fifty Two Rupees And Eighty Five Paise Only',
 		vendor: {
 			address: {
-				lines: ['17-261, Mean Street,',
-					'Jobber'],
-				state: 'Heading Town,',
-				country: 'Broch,',
+				lines: ['17-261, Mean Street,', 'Jobber'],
+				state: 'Heading Town',
+				country: 'Broch',
 				zipCode: 340321,
 			},
 			govtDoc: { id: 'R7909FFJPA', type: 'PAN' },
@@ -21,15 +20,13 @@ const config = {
 		},
 		client: {
 			address: {
-				lines: [
-					'Abstract Business Systems Pvt. Ltd',
-					'#40, Subramaniyapuram New St,',
-				],
-				state: 'Tamil Nadu,',
-				country: 'India,',
+				lines: ['#40, Subramaniyapuram New St'],
+				state: 'Tamil Nadu',
+				country: 'India',
 				zipCode: 630302,
 			},
 			govtDoc: { id: '33AAXCA0332P1ZC', type: 'GSTIN' },
+			name: 'Abstract Business Systems Pvt. Ltd',
 		},
 		bankDetails: {
 			accountHolderName: 'Fluf Dug',
