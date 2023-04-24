@@ -37,7 +37,6 @@ const styles = StyleSheet.create({
 	subView: {
 		flexDirection: 'column',
 		width: '80%',
-		height: 80,
 	},
 });
 

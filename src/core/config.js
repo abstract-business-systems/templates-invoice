@@ -1,27 +1,34 @@
 /* eslint-disable max-len */
 const config = {
 	obj: {
-		invoiceDate: new Date('2022-09-28T18:29:50.000Z'),
-		id: 'fdg22092801',
-		subTotal: 4727.5,
-		grandTotal: 4254.75,
+		invoiceDate: '2002-09-18T18:29:50.000Z',
+		id: 'fdg02091801',
+		subTotal: 2836.5,
+		grandTotal: 2552.85,
 		currency: 'INR',
 		amountInWords:
-			'INR Four Thousand Two Hundred Fifty Four point Seven Five.',
+			' INR Two Thousand Five Hundred Fifty Two Rupees And Eighty Five Paise Only',
 		vendor: {
-			address: [
-				'17-261, Mean Street,Jobber, Heading Town,',
-				'Broch - 340 321.',
-			],
+			address: {
+				lines: ['17-261, Mean Street,',
+					'Jobber'],
+				state: 'Heading Town,',
+				country: 'Broch,',
+				zipCode: 340321,
+			},
 			govtDoc: { id: 'R7909FFJPA', type: 'PAN' },
 			name: 'Fluf Dug',
 		},
 		client: {
-			address: [
-				'Abstract Business Systems Pvt. Ltd,',
-				'#40, Subramaniyapuram New St,',
-				'Devakottai, Tamilnadu - 630302.',
-			],
+			address: {
+				lines: [
+					'Abstract Business Systems Pvt. Ltd',
+					'#40, Subramaniyapuram New St,',
+				],
+				state: 'Tamil Nadu,',
+				country: 'India,',
+				zipCode: 630302,
+			},
 			govtDoc: { id: '33AAXCA0332P1ZC', type: 'GSTIN' },
 		},
 		bankDetails: {
@@ -37,9 +44,10 @@ const config = {
 				type: 'product',
 				unit: 'hrs',
 				quantity: 94.55,
-				rate: 50,
-				amount: 4727.5,
+				rate: 30,
+				amount: 2836.5,
 			},
+			{ item: 'Other charges', type: 'product', amount: 1200 },
 		],
 	},
 	hsnOrSAC: '-',
