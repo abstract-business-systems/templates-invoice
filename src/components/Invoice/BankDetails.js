@@ -10,7 +10,7 @@ const BankDetails = (context) => {
 		<Text style={ [styles.borderTop, styles.bold] }>Bank Details: </Text>
 		{bankDetails.map((bankDetail, key) =>
 			<View key={ key } style={ [styles.subRow, { paddingLeft: 5 }] }>
-				<Text style={ [styles.bold] }>{bankDetail.title}:</Text>
+				<Text style={ [styles.bold] }>{bankDetail.header}:</Text>
 				<Text style={ [styles.light] }>{bankDetail.value}</Text>
 			</View>)}
 	</View>;

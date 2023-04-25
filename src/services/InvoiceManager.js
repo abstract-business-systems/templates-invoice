@@ -26,11 +26,11 @@ const getBankDetails = (context) => {
 	const { config: { obj: { bankDetails }}} = context;
 
 	return [
-		{ title: 'Name', value: bankDetails.accountHolderName },
-		{ title: 'IFSC', value: bankDetails.ifsc },
-		{ title: 'Account No', value: bankDetails.accountNo },
-		{ title: 'Acc Type', value: bankDetails.accountType },
-		{ title: 'Branch Name', value: bankDetails.branchName },
+		{ header: 'Name', value: bankDetails.accountHolderName },
+		{ header: 'IFSC', value: bankDetails.ifsc },
+		{ header: 'Account No', value: bankDetails.accountNo },
+		{ header: 'Acc Type', value: bankDetails.accountType },
+		{ header: 'Branch Name', value: bankDetails.branchName },
 	];
 };
 
