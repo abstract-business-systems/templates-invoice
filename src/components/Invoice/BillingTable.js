@@ -36,9 +36,10 @@ const styles = StyleSheet.create({
 	},
 	borderTop: { borderTop: '1.5px solid #EEE' },
 });
+
 const BillingTable = (context) =>
 	<View style={ styles.table }>
-		<BankDetails { ...{ ...context, style: styles } }/>
+		<BankDetails { ...{ ...context, styles } }/>
 		<BillingDetails { ...{ ...context, styles } }/>
 	</View>;
 
