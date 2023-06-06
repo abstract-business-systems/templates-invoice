@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "@abs/template/invoice",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
