@@ -1,5 +1,5 @@
 {
-  "name": "@abs/template/invoice",
+  "name": "@abs/templates/invoice",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
