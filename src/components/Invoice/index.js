@@ -8,9 +8,11 @@ import ChargesTable from './ChargesTable';
 import BillingTable from './BillingTable';
 import styles from './styles';
 import AddressLabels from './AddressLabels';
+import config from '../../core/config';
 
-const Invoice = (context) => {
-	const { config: { pageSize }} = context;
+const Invoice = ({ item, config: { timeZone }}) => {
+	const context = { config: { ...config, timeZone: timeZone, obj: item }};
+	const { pageSize } = config;
 	const extendedContext = { ...context, styles };
 
 	return (

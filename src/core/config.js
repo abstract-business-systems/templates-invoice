@@ -1,7 +1,7 @@
 /* eslint-disable max-len */
 const config = {
 	obj: {
-		invoiceDate: '2002-09-18T18:29:50.000Z',
+		invoiceDate: '2002-09-18T18:30:00.000Z',
 		id: 'fdg02091801',
 		subTotal: 2836.5,
 		grandTotal: 2552.85,

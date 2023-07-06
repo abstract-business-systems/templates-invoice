@@ -1,4 +1,8 @@
 import dayjs from 'dayjs';
+import timezone from 'dayjs/plugin/timezone';
+import utc from 'dayjs/plugin/utc';
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 const getNormalizedTotals = (context) => {
 	const { config: { digits,
@@ -42,8 +46,9 @@ const getFilteredItems = (context) => {
 
 const isProduct = ({ data: { item: { type }}}) => type === 'product';
 
-const getInvoiceDate = ({ config: { obj: { invoiceDate }}}) =>
-	dayjs(invoiceDate).format('DD-MM-YYYY');
+const getInvoiceDate = ({ config: { obj: { invoiceDate }, timeZone }}) =>
+	dayjs.utc(invoiceDate).tz(timeZone)
+		.format('DD-MM-YYYY');
 
 const InvoiceManager = {
 	getBillingDetails,
