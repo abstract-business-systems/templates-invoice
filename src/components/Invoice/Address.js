@@ -10,10 +10,10 @@ const Address = (context) => {
 			<Text
 				key={ i }
 				style={ [styles.light, styles.text] }
-			>{line}</Text>)}
-		<Text style={ [styles.light, styles.text] }>{address.state}</Text>
-		<Text style={ [styles.light, styles.text] }>{address.country}</Text>
-		<Text style={ [styles.light, styles.text] }>{address.zipCode}</Text>
+			>{line},</Text>)}
+		<Text style={ [styles.light, styles.text] }>{address.state},</Text>
+		<Text style={ [styles.light, styles.text] }>{address.country},</Text>
+		<Text style={ [styles.light, styles.text] }>{address.zipCode}.</Text>
 	</View>;
 };
 
